@@ -1,0 +1,17 @@
+%p#logo
+  %a{:href => "/"} PorroWeb
+%p
+  %a{:href => "#"} Contacto
+%ul.utils
+  %li.name Pedro
+  %li
+    %a{:href => "#"} Cuenta
+  %li
+    %a{:href => "#"} Consumo
+  %li
+    %a{:href => "#"} Tarifas
+  %li.messages
+    %a{:href => "#"} Mensajes
+    %span.count 1
+  %li.logout
+    = link_to t('.exit'), logout_url

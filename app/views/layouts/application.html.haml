@@ -1,0 +1,15 @@
+!!! 5
+  = render :partial => 'layouts/head'
+  %body
+    #head
+      .wrapper
+        = render :partial => 'layouts/header'
+    #nav
+      .wrapper.clearfix
+        = render :partial => 'layouts/nav'
+    #main{ :role => 'main' }
+      = render :partial => 'layouts/flashes'
+    #container
+      = yield
+      %footer#footer
+        = render :partial => 'layouts/footer'
