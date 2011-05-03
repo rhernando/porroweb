@@ -8,7 +8,13 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 
 gem 'haml'
+gem 'compass'
+gem 'html5-boilerplate'
+gem 'jquery-rails'
+
 gem 'devise'
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -30,4 +36,16 @@ gem 'devise'
 # and rake tasks are available in development mode:
 # group :development, :test do
 #   gem 'webrat'
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'shoulda'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'spork'
+  gem 'factory_girl_rails'
+  gem 'annotate-models'
+  gem 'haml-rails'
+end
+
 # end
