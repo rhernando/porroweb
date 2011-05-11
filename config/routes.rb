@@ -1,5 +1,7 @@
 Porroweb::Application.routes.draw do
 
+  resources :noticia
+
   devise_for :usuarios
 
   # The priority is based upon order of creation:

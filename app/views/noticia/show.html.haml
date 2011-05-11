@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Texto:
+  = @noticium.texto
+%p
+  %b Fecha:
+  = @noticium.fecha
+%p
+  %b Titulo:
+  = @noticium.titulo
+
+= link_to 'Edit', edit_noticium_path(@noticium)
+\|
+= link_to 'Back', noticia_path

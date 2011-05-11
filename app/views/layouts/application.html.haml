@@ -8,9 +8,8 @@
     #container
       %header#header
         = render "layouts/header"
-
-      %nav#topNav
-        = render :partial => 'layouts/nav'
+        %nav#topNav
+          = render :partial => 'layouts/nav'
       #main{ :role => 'main' }
         = render "layouts/flashes"
         = yield
