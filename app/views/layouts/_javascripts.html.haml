@@ -1,19 +1,25 @@
-= javascript_include_tag "//www.google.com/jsapi?key=#{google_api_key}"
-:javascript
-  google.load(#{ remote_jquery("1.5.1") });
-  google.load("maps","2.x")
+-# Grab Google CDN's jQuery, with a protocol relative URL
+-# Looks for google_api_key first in ENV['GOOGLE_API_KEY'] then in config/google.yml
+-# remote_jquery and local_jquery helpers use minified jquery unless Rails.env is development
+- if !google_api_key.blank?
+  = javascript_include_tag "//www.google.com/jsapi?key=#{google_api_key}"
+  :javascript
+    google.load(#{ remote_jquery("1.5.2") });
+- else
+  = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/#{ local_jquery("1.5.2") }"
 
+-# fall back to local jQuery if necessary
 :javascript
-  !window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery.min.js"%3E%3C/script%3E'))
-
-= javascript_include_tag 'rails', 'plugins', 'application', 'jquery.placeholder'
+  window.jQuery || document.write("<script src='/javascripts/jquery.min.js'>\x3C/script>")
+  
+= javascript_include_tag 'rails', 'plugins', 'application'
 
 -# Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb
 /[if lt IE 7 ]
   = javascript_include_tag 'dd_belatedpng.js'
   :javascript
     //DD_belatedPNG.fix('img, .png_bg');
-
+    
 -#  Append your own using content_for :javascripts
 = yield :javascripts
 
@@ -21,11 +27,23 @@
 -# Looks for google_account_id first in ENV['GOOGLE_ACCOUNT_ID'] then in config/google.yml
 - if !google_account_id.blank?
   :javascript
-    var _gaq = [['_setAccount', '#{google_account_id}'], ['_trackPageview']];
-    (function(d, t) {
-      var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      g.async = true;
-      g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g, s);
-    })(document, 'script');
+    var _gaq=[["_setAccount","#{google_account_id}"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+
+:javascript
+  (function($){
+    var nav = $("#topNav");
+    nav.find("li").each(function() {
+      if ($(this).find("ul").length > 0) {
+        $("<span>").text("^").appendTo($(this).children(":first"));
+        $(this).mouseenter(function() {
+          $(this).find("ul").stop(true, true).slideDown();
+        });
+        $(this).mouseleave(function() {
+          $(this).find("ul").stop(true, true).slideUp();
+        });
+      }
+    });
+  })(jQuery);
