@@ -280,35 +280,36 @@ nav ul, nav li {
 
 /* line 8, ../../app/stylesheets/partials/_page.scss */
 body, select, input, textarea {
-  color: #444444;
+  color: #aa9999;
+  background-color: black;
 }
 
-/* line 15, ../../app/stylesheets/partials/_page.scss */
+/* line 16, ../../app/stylesheets/partials/_page.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* line 21, ../../app/stylesheets/partials/_page.scss */
+/* line 22, ../../app/stylesheets/partials/_page.scss */
 a, a:active, a:visited {
   color: #607890;
 }
 
-/* line 22, ../../app/stylesheets/partials/_page.scss */
+/* line 23, ../../app/stylesheets/partials/_page.scss */
 a:hover {
   color: #003366;
 }
 
-/* line 24, ../../app/stylesheets/partials/_page.scss */
+/* line 25, ../../app/stylesheets/partials/_page.scss */
 strong, th {
   font-weight: bold;
 }
 
-/* line 28, ../../app/stylesheets/partials/_page.scss */
+/* line 29, ../../app/stylesheets/partials/_page.scss */
 small {
   font-size: 85%;
 }
 
-/* line 37, ../../app/stylesheets/partials/_page.scss */
+/* line 38, ../../app/stylesheets/partials/_page.scss */
 input:invalid, textarea:invalid {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
@@ -322,7 +323,7 @@ input:invalid, textarea:invalid {
   box-shadow: 0 0 5px 0 red;
 }
 
-/* line 42, ../../app/stylesheets/partials/_page.scss */
+/* line 43, ../../app/stylesheets/partials/_page.scss */
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
   background-color: #f0dddd;
@@ -394,86 +395,144 @@ input:invalid, textarea:invalid {
 nav {
   display: block;
   margin: 0 auto 20px;
-  border: 1px solid #555;
+  padding: 7px 6px 0;
   position: relative;
-  background-color: #888;
   font-size: 18px;
   font-family: Verdana;
+  background: black url("/images/bgimage.gif") repeat-x 0 -40px;
+  border: 1px solid #BBB;
+  line-height: 100%;
+  border-radius: 4em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-/* line 18, ../../app/stylesheets/partials/_menu.scss */
+/* line 25, ../../app/stylesheets/partials/_menu.scss */
 nav ul {
+  margin: 0;
+  padding: 7px 6px 0;
+  background: #7d7d7d url("/images/bgimage.gif") repeat-x 0 -40px;
+  line-height: 100%;
+  border-radius: 4em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   padding: 0;
   margin: 0;
+  display: inline-block;
 }
-/* line 22, ../../app/stylesheets/partials/_menu.scss */
+/* line 26, ../../app/stylesheets/partials/_menu.scss */
+nav ul .current a, nav ul li:hover > a {
+  background: #666666 url("/images/bgimage.gif") repeat-x 0 -110px;
+  color: #FFF;
+  border-top: solid 1px #EEE;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+/* line 35, ../../app/stylesheets/partials/_menu.scss */
+nav ul a {
+  border-radius: 1.6em;
+  -webkit-border-radius: 1.6em;
+  -moz-border-radius: 1.6em;
+  color: #EEEEEE;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* line 50, ../../app/stylesheets/partials/_menu.scss */
+nav ul a:hover {
+  background: #000;
+  color: #fff;
+}
+/* line 71, ../../app/stylesheets/partials/_menu.scss */
 nav ul li {
   position: relative;
   float: left;
-  list-style-type: none;
+  list-style: none;
+  padding: 0 0 8px;
+  margin: 0 5px;
 }
-/* line 27, ../../app/stylesheets/partials/_menu.scss */
+/* line 78, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a {
   border-left: none;
   border-right: none;
   font-size: 16px;
-  color: #990000;
+  color: #BBB;
   text-decoration: none;
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 31, ../../app/stylesheets/partials/_menu.scss */
+/* line 82, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a span {
   display: block;
   float: right;
   margin-left: 5px;
 }
-/* line 37, ../../app/stylesheets/partials/_menu.scss */
+/* line 88, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a:focus {
   outline: none;
   text-decoration: underline;
 }
-/* line 41, ../../app/stylesheets/partials/_menu.scss */
+/* line 92, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a:visited {
   border-left: none;
   border-right: none;
   font-size: 16px;
-  color: #990000;
+  color: #BBB;
   text-decoration: none;
 }
-/* line 45, ../../app/stylesheets/partials/_menu.scss */
+/* line 96, ../../app/stylesheets/partials/_menu.scss */
 nav ul li ul {
   display: none;
   position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  top: 35px;
   left: 0;
-  background: #AAA;
+  background: #bbbbbb url("/images/bgimage.gif") repeat-x 0 -110px;
 }
-/* line 51, ../../app/stylesheets/partials/_menu.scss */
+/* line 106, ../../app/stylesheets/partials/_menu.scss */
 nav ul li ul li {
   float: none;
 }
-/* line 54, ../../app/stylesheets/partials/_menu.scss */
+/* line 109, ../../app/stylesheets/partials/_menu.scss */
 nav ul li ul li a {
   border-left: none;
   border-right: none;
   font-size: 14px;
-  color: #990000;
+  color: #BBB;
   text-decoration: none;
   padding-left: 30px;
   padding-right: 25px;
 }
-/* line 60, ../../app/stylesheets/partials/_menu.scss */
+/* line 115, ../../app/stylesheets/partials/_menu.scss */
 nav ul li ul li a:hover {
-  background-color: #AAA;
+  background: #bbbbbb url("/images/bgimage.gif") repeat-x 0 -40px;
+  color: #fff !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 69, ../../app/stylesheets/partials/_menu.scss */
+/* line 132, ../../app/stylesheets/partials/_menu.scss */
 nav ul li:firs-child a {
   border-left: none;
 }
-/* line 75, ../../app/stylesheets/partials/_menu.scss */
+/* line 138, ../../app/stylesheets/partials/_menu.scss */
 nav ul li.last a {
   border-right: none;
 }
-/* line 80, ../../app/stylesheets/partials/_menu.scss */
+/* line 143, ../../app/stylesheets/partials/_menu.scss */
+nav ul li:hover > ul {
+  display: block;
+}
+/* line 147, ../../app/stylesheets/partials/_menu.scss */
 nav ul:after {
   content: ".";
   display: block;
@@ -482,70 +541,10 @@ nav ul:after {
   visibility: hidden;
 }
 
-/* line 92, ../../app/stylesheets/partials/_menu.scss */
-.borderradius nav {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 98, ../../app/stylesheets/partials/_menu.scss */
-.borderradius nav ul ul {
-  -moz-border-radius-bottomleft: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -webkit-border-bottom-rightright-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-rightright-radius: 4px;
-}
-/* line 114, ../../app/stylesheets/partials/_menu.scss */
-.borderradius .rgba nav ul ul li .last {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  -moz-border-radius-bottomleft: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -webkit-border-bottom-rightright-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-rightright-radius: 4px;
-}
-
-/* line 132, ../../app/stylesheets/partials/_menu.scss */
-.cssgradients nav {
-  background-image: -moz-linear-gradient(0% 22px 90deg, #555555, #888888);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 70%, from(#888888), to(#555555));
-}
-/* line 136, ../../app/stylesheets/partials/_menu.scss */
-.cssgradients nav li:hover {
-  background-image: -moz-linear-gradient(0% 100px 90deg, #888888, #555555);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555555), to(#888888));
-}
-
-/* line 145, ../../app/stylesheets/partials/_menu.scss */
-.boxshadow.rgba nav {
-  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
-}
-/* line 151, ../../app/stylesheets/partials/_menu.scss */
-.boxshadow.rgba nav ul ul {
-  background-color: rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-}
-
-/* line 166, ../../app/stylesheets/partials/_menu.scss */
-.rgba nav ul li ul li {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-/* line 171, ../../app/stylesheets/partials/_menu.scss */
-.rgba nav ul li ul a:hover {
-  background-color: rgba(85, 85, 85, 0.9);
-}
-
-/* line 183, ../../app/stylesheets/partials/_menu.scss */
-.csstransforms ul a span {
-  -moz-transform: rotate(-180deg);
-  -webkit-transform: rotate(-180deg);
+/* line 1, ../../app/stylesheets/partials/_header.scss */
+header {
+  text-align: center;
+  border: 0;
+  padding: 0;
+  background-color: #000000;
 }

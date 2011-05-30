@@ -10,6 +10,10 @@ class NoticiaController < ApplicationController
     end
   end
 
+  def noticias_home
+    @noticia = Noticium.all(:limit => 10)
+  end
+
   # GET /noticia/1
   # GET /noticia/1.xml
   def show
