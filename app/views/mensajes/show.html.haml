@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Usuario:
+  = @mensaje.usuario_id
+%p
+  %b Fecha:
+  = @mensaje.fecha
+%p
+  %b Texto:
+  = @mensaje.texto
+
+= link_to 'Edit', edit_mensaje_path(@mensaje)
+\|
+= link_to 'Back', mensajes_path

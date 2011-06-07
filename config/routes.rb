@@ -1,5 +1,7 @@
 Porroweb::Application.routes.draw do
 
+  resources :mensajes
+
   resources :noticia
 
   devise_for :usuarios

@@ -2,3 +2,13 @@
 
 es:
   hello: "Hola!!"
+  activerecord:
+    errors:
+      models:
+        usuario:
+          attributes:
+            password:
+              too_short: 'La contraseña debe tener al menos 6 caracteres'
+  errors:
+    messages:
+      not_saved: 'No se pudo guardar'

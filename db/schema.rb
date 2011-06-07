@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110511204021) do
+ActiveRecord::Schema.define(:version => 20110607194353) do
+
+  create_table "mensajes", :force => true do |t|
+    t.integer  "usuario_id"
+    t.date     "fecha"
+    t.text     "texto"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "noticia", :force => true do |t|
     t.text     "texto"
