@@ -1,14 +1,15 @@
 %ul
   %li.current
-    %a{:href => "#"} Inicio
-  %li
-    %a{:href => "#"} Panel de Control
+    = link_to "Inicio", :root
+  - if usuario_signed_in?
+    %li
+      %a{:href => "#"} Panel de Control
   %li
     %a{:href => "#"} Porras
     %ul
       %li
         %a{:href => "#"}porroliga
   %li
-    %a{:href => "#"} Porreros
+    %a{:href => "#"} Participantes
   %li
     %a{:href => "#"} Clasificación

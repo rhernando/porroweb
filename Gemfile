@@ -6,6 +6,7 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'annotate-models'
 
 gem 'haml'
 gem 'compass'
@@ -14,6 +15,7 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+gem "will_paginate", "3.0.pre"
 
 # Use unicorn as the web server
 # gem 'unicorn'

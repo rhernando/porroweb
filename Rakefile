@@ -4,4 +4,7 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
+include Rake::DSL
+
 Porroweb::Application.load_tasks
+

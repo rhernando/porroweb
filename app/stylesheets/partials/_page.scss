@@ -49,7 +49,12 @@ input:invalid, textarea:invalid {
 
 body {}
 
-#container {}
+#container {
+
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
 
 header {}
 

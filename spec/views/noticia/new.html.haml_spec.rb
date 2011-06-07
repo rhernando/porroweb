@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "noticia/new.html.haml" do
+describe "noticia/_new.html.haml" do
   before(:each) do
     assign(:noticium, stub_model(Noticium,
       :texto => "MyText",

@@ -1,0 +1,14 @@
+= t('hello')
+- @noticia.each do |noticium|
+  %article
+    %h2=noticium.titulo
+    =noticium.fecha
+    .line
+    .noticia
+      =noticium.texto
+
+
+= will_paginate @noticia
+
+= page_entries_info @noticia
+

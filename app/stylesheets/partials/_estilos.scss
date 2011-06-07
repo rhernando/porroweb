@@ -1,0 +1,21 @@
+article{
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+
+	 background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
+	margin:3em 0;
+	padding:20px;
+
+	text-shadow:0 2px 0 black;
+
+    .line{
+        background-color:#550000;
+        border-bottom-color:#204656;
+        margin:1.3em 0;
+        height:1px;
+        border-bottom:1px solid #551111;
+        margin:1em 0;
+        overflow:hidden;
+    }
+}

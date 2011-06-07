@@ -1,0 +1,18 @@
+%h2 Entrar
+
+= form_tag new_usuario_session_path do
+  %fieldset
+    %p= text_field_tag 'user[email]'
+    %br
+    %p= password_field_tag 'user[password]'
+    %br
+    %p= check_box_tag 'user[remember_me]'
+    %br
+    = label_tag 'user[remember_me]', 'Recordarme'
+    %br
+    %p
+      %button Login
+  %fieldset
+    = link_to "Olvidé la contraseña", new_usuario_password_path('user')
+
+
