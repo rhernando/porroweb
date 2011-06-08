@@ -14,9 +14,10 @@ gem 'html5-boilerplate'
 gem 'jquery-rails'
 
 gem 'devise'
-
+gem "simple-navigation"
 gem "will_paginate", "3.0.pre2"
 
+gem "annotate"
 # Use unicorn as the web server
 # gem 'unicorn'
 

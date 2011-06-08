@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110607194353) do
+ActiveRecord::Schema.define(:version => 20110608150135) do
+
+  create_table "inscripciones", :force => true do |t|
+    t.integer  "porra_id"
+    t.integer  "usuario_id"
+    t.date     "fecha"
+    t.boolean  "pagado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "mensajes", :force => true do |t|
     t.integer  "usuario_id"
@@ -24,6 +33,14 @@ ActiveRecord::Schema.define(:version => 20110607194353) do
     t.text     "texto"
     t.date     "fecha"
     t.string   "titulo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "porras", :force => true do |t|
+    t.string   "titulo"
+    t.float    "importe"
+    t.integer  "inscripcion_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,15 +1,1 @@
-%ul
-  %li.current
-    = link_to "Inicio", :root
-  - if usuario_signed_in?
-    %li
-      %a{:href => "#"} Panel de Control
-  %li
-    %a{:href => "#"} Porras
-    %ul
-      %li
-        %a{:href => "#"}porroliga
-  %li
-    %a{:href => "#"} Participantes
-  %li
-    %a{:href => "#"} Clasificación
+= render_navigation( :expand_all => true)

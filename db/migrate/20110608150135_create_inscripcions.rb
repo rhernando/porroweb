@@ -1,6 +1,6 @@
 class CreateInscripcions < ActiveRecord::Migration
   def self.up
-    create_table :inscripcions do |t|
+    create_table :inscripciones do |t|
       t.integer :porra_id
       t.integer :usuario_id
       t.date :fecha
@@ -11,6 +11,6 @@ class CreateInscripcions < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :inscripcions
+    drop_table :inscripciones
   end
 end
