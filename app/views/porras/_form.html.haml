@@ -1,0 +1,19 @@
+= form_for @porra do |f|
+  -if @porra.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@porra.errors.count, "error")} prohibited this porra from being saved:"
+      %ul
+        - @porra.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :titulo
+    = f.text_field :titulo
+  .field
+    = f.label :importe
+    = f.text_field :importe
+  .field
+    = f.label :inscripcion_id
+    = f.text_field :inscripcion_id
+  .actions
+    = f.submit 'Save'

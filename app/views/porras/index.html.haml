@@ -1,0 +1,23 @@
+%h1 Listing porras
+
+%table
+  %tr
+    %th Titulo
+    %th Importe
+    %th Inscripcion
+    %th
+    %th
+    %th
+
+  - @porras.each do |porra|
+    %tr
+      %td= porra.titulo
+      %td= porra.importe
+      %td= porra.inscripcion_id
+      %td= link_to 'Show', porra
+      %td= link_to 'Edit', edit_porra_path(porra)
+      %td= link_to 'Destroy', porra, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Porra', new_porra_path

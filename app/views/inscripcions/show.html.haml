@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Porra:
+  = @inscripcion.porra_id
+%p
+  %b Usuario:
+  = @inscripcion.usuario_id
+%p
+  %b Fecha:
+  = @inscripcion.fecha
+%p
+  %b Pagado:
+  = @inscripcion.pagado
+
+= link_to 'Edit', edit_inscripcion_path(@inscripcion)
+\|
+= link_to 'Back', inscripcions_path

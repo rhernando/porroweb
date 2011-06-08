@@ -1,0 +1,25 @@
+%h1 Listing inscripcions
+
+%table
+  %tr
+    %th Porra
+    %th Usuario
+    %th Fecha
+    %th Pagado
+    %th
+    %th
+    %th
+
+  - @inscripcions.each do |inscripcion|
+    %tr
+      %td= inscripcion.porra_id
+      %td= inscripcion.usuario_id
+      %td= inscripcion.fecha
+      %td= inscripcion.pagado
+      %td= link_to 'Show', inscripcion
+      %td= link_to 'Edit', edit_inscripcion_path(inscripcion)
+      %td= link_to 'Destroy', inscripcion, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Inscripcion', new_inscripcion_path

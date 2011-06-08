@@ -1,5 +1,9 @@
 Porroweb::Application.routes.draw do
 
+  resources :inscripcions
+
+  resources :porras
+
   resources :mensajes
 
   resources :noticia

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Titulo:
+  = @porra.titulo
+%p
+  %b Importe:
+  = @porra.importe
+%p
+  %b Inscripcion:
+  = @porra.inscripcion_id
+
+= link_to 'Edit', edit_porra_path(@porra)
+\|
+= link_to 'Back', porras_path
