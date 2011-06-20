@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110608150135
+# Schema version: 20110620222242
 #
 # Table name: porras
 #
@@ -9,6 +9,8 @@
 #  inscripcion_id :integer
 #  created_at     :datetime
 #  updated_at     :datetime
+#  descripcion    :text
+#  fecha_inicio   :date
 #
 
 class Porra < ActiveRecord::Base

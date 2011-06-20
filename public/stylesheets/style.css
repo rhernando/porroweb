@@ -443,8 +443,8 @@ nav ul li {
   position: relative;
   float: left;
   list-style: none;
-  padding: 0 0 8px;
-  margin: 0 5px;
+  padding: 0 0 5px;
+  margin: 0 2px;
 }
 /* line 78, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a {

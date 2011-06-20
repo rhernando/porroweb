@@ -13,4 +13,7 @@
 #
 
 class Inscripcion < ActiveRecord::Base
+  belongs_to :usuario
+  belongs_to :porra
+
 end

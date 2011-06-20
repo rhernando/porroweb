@@ -1,4 +1,5 @@
 
-= render :partial => "devise/sessions/new"
+- if !usuario_signed_in?
+  = render :partial => "devise/sessions/new"
 
 = render  :partial => '/noticia/noticias_home'

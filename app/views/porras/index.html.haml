@@ -1,4 +1,17 @@
-%h1 Listing porras
+%h1 Listado de porras
+
+- @porras.each do |porra|
+  %article
+    %h2= porra.titulo
+    %p
+      Fecha Inicio:
+      = porra.fecha_inicio
+    %p= porra.descripcion
+    .line
+    %p
+      Participantes Inscritos:
+      = porra.usuarios.count
+
 
 %table
   %tr
