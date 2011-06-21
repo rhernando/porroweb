@@ -16,4 +16,6 @@ class Inscripcion < ActiveRecord::Base
   belongs_to :usuario
   belongs_to :porra
 
+  validates_presence_of :usuario, :porra
+
 end

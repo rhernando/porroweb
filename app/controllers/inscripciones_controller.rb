@@ -1,6 +1,9 @@
-class InscripcionsController < ApplicationController
-  # GET /inscripcions
-  # GET /inscripcions.xml
+class InscripcionesController < ApplicationController
+  # GET /inscripciones
+  # GET /inscripciones.xml
+
+  before_filter :authenticate_usuario!
+
   def index
     @inscripcions = Inscripcion.all
 
@@ -10,8 +13,8 @@ class InscripcionsController < ApplicationController
     end
   end
 
-  # GET /inscripcions/1
-  # GET /inscripcions/1.xml
+  # GET /inscripciones/1
+  # GET /inscripciones/1.xml
   def show
     @inscripcion = Inscripcion.find(params[:id])
 
@@ -21,10 +24,14 @@ class InscripcionsController < ApplicationController
     end
   end
 
-  # GET /inscripcions/new
-  # GET /inscripcions/new.xml
+  # GET /inscripciones/new
+  # GET /inscripciones/new.xml
   def new
     @inscripcion = Inscripcion.new
+
+    porra = params[:porra]
+    @inscripcion.porra = Porra.find porra
+
 
     respond_to do |format|
       format.html # new.html.erb
@@ -32,13 +39,13 @@ class InscripcionsController < ApplicationController
     end
   end
 
-  # GET /inscripcions/1/edit
+  # GET /inscripciones/1/edit
   def edit
     @inscripcion = Inscripcion.find(params[:id])
   end
 
-  # POST /inscripcions
-  # POST /inscripcions.xml
+  # POST /inscripciones
+  # POST /inscripciones.xml
   def create
     @inscripcion = Inscripcion.new(params[:inscripcion])
 
@@ -53,8 +60,8 @@ class InscripcionsController < ApplicationController
     end
   end
 
-  # PUT /inscripcions/1
-  # PUT /inscripcions/1.xml
+  # PUT /inscripciones/1
+  # PUT /inscripciones/1.xml
   def update
     @inscripcion = Inscripcion.find(params[:id])
 
@@ -69,8 +76,8 @@ class InscripcionsController < ApplicationController
     end
   end
 
-  # DELETE /inscripcions/1
-  # DELETE /inscripcions/1.xml
+  # DELETE /inscripciones/1
+  # DELETE /inscripciones/1.xml
   def destroy
     @inscripcion = Inscripcion.find(params[:id])
     @inscripcion.destroy

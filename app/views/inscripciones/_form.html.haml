@@ -6,15 +6,16 @@
         - @inscripcion.errors.full_messages.each do |msg|
           %li= msg
 
+  - @inscripcion.usuario = current_usuario
   .field
     = f.label :porra_id
-    = f.text_field :porra_id
+    %strong= @inscripcion.porra.titulo
   .field
     = f.label :usuario_id
-    = f.text_field :usuario_id
+    = current_usuario.nombre
   .field
     = f.label :fecha
-    = f.date_select :fecha
+    = Time.now
   .field
     = f.label :pagado
     = f.check_box :pagado

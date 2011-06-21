@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "inscripcions/edit.html.haml" do
+describe "inscripciones/edit.html.haml" do
   before(:each) do
     @inscripcion = assign(:inscripcion, stub_model(Inscripcion,
       :porra_id => 1,

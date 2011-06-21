@@ -1,5 +1,22 @@
 %p#notice= notice
 
+%h1= @porra.titulo
+
+%p= @porra.descripcion
+
+%p
+  Usuarios inscritos:
+  = @porra.usuarios.count
+
+- if @porra.usario_inscrito? current_usuario
+  %p estas inscrito
+- else
+  %p
+    = link_to "incribirse",  inscribir_url(:porra => @porra)
+
+
+
+
 %p
   %b Titulo:
   = @porra.titulo

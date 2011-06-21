@@ -18,7 +18,7 @@ require 'spec_helper'
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
 
-describe InscripcionsController do
+describe InscripcionesController do
 
   # This should return the minimal set of attributes required to create a valid
   # Inscripcion. As you add validations to Inscripcion, be sure to
@@ -28,7 +28,7 @@ describe InscripcionsController do
   end
 
   describe "GET index" do
-    it "assigns all inscripcions as @inscripcions" do
+    it "assigns all inscripciones as @inscripciones" do
       inscripcion = Inscripcion.create! valid_attributes
       get :index
       assigns(:inscripcions).should eq([inscripcion])
@@ -99,7 +99,7 @@ describe InscripcionsController do
     describe "with valid params" do
       it "updates the requested inscripcion" do
         inscripcion = Inscripcion.create! valid_attributes
-        # Assuming there are no other inscripcions in the database, this
+        # Assuming there are no other inscripciones in the database, this
         # specifies that the Inscripcion created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
@@ -147,7 +147,7 @@ describe InscripcionsController do
       }.to change(Inscripcion, :count).by(-1)
     end
 
-    it "redirects to the inscripcions list" do
+    it "redirects to the inscripciones list" do
       inscripcion = Inscripcion.create! valid_attributes
       delete :destroy, :id => inscripcion.id.to_s
       response.should redirect_to(inscripcions_url)

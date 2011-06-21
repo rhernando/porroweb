@@ -2,7 +2,7 @@
 
 - @porras.each do |porra|
   %article
-    %h2= porra.titulo
+    %h2= link_to porra.titulo, porra
     %p
       Fecha Inicio:
       = porra.fecha_inicio
