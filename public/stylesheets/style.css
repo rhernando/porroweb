@@ -310,6 +310,34 @@ input:invalid, textarea:invalid {
   margin: 0 auto;
   position: relative;
   width: 960px;
+  display: table;
+}
+
+/* line 60, ../../app/stylesheets/partials/_page.scss */
+header {
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+/* line 66, ../../app/stylesheets/partials/_page.scss */
+#main {
+  display: table-cell;
+  width: 760px;
+}
+
+/* line 73, ../../app/stylesheets/partials/_page.scss */
+aside {
+  display: table-cell;
+  width: 200px;
+  display: block;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: black url("/images/bgimage.gif") repeat-x 0 -40px;
+  margin: 3em 0;
+  padding: 20px;
+  text-shadow: 0 2px 0 black;
 }
 
 @media print {

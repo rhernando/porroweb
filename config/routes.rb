@@ -7,8 +7,10 @@ Porroweb::Application.routes.draw do
   resources :mensajes
 
   resources :noticia
+  resources :user, :only => [:index, :show]
 
-  devise_for :usuarios
+  devise_for :usuarios, :controllers => { :sessions => 'usuarios/sessions' }
+
 
   match 'inscripcion/:porra/nueva' => 'inscripciones#new', :as => :inscribir
 

@@ -5,17 +5,18 @@
     = render "layouts/head", :stylesheet_partial => "layouts/stylesheets"
   
   %body
+    %header#header
+      = render "layouts/header"
+      %nav#topNav
+        = render :partial => 'layouts/nav'
     #container
-      %header#header
-        = render "layouts/header"
-        %nav#topNav
-          = render :partial => 'layouts/nav'
       #main{ :role => 'main' }
         = render "layouts/flashes"
         = yield
-        
-      %footer#footer
-        = render "layouts/footer"
+      %aside
+        = render "layouts/aside"
+    %footer#footer
+      = render "layouts/footer"
         
     -# Javascript at the bottom for fast page loading
     = render "layouts/javascripts"

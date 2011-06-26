@@ -1,0 +1,4 @@
+#usuarios_online
+  %h1 Usuarios conectados:
+  - @user_online.each do |usuario|
+    %p= usuario.nombre

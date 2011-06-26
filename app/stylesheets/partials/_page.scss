@@ -54,10 +54,34 @@ body {}
     margin: 0 auto;
     position: relative;
     width: 960px;
+    display:table;
 }
 
-header {}
+header {
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
 
-#main {}
+#main {
+    display:table-cell;
+    width:760px;
+}
 
 footer {}
+
+aside{
+    display: table-cell;
+    width: 200px;
+    display: block;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+
+	background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
+	margin:3em 0;
+	padding:20px;
+
+	text-shadow:0 2px 0 black;
+
+}

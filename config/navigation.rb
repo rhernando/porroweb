@@ -51,8 +51,8 @@ SimpleNavigation::Configuration.run do |navigation|
         sub_porra.item :porras_1, p.titulo, porra_path(p)
       end
     end
-    primary.item :panel_usuario, 'Mi Cuenta', root_path if usuario_signed_in?
-    primary.item :usuarios, "Participantes", usuario_registration_path
+    primary.item :panel_usuario, 'Mi Cuenta', user_path(current_usuario) if usuario_signed_in?
+    primary.item :usuarios, "Participantes", user_index_path
     primary.item :noticias, "Noticias", noticia_path
     primary.item :home, "Estadisticas", root_path
 
