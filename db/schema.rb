@@ -10,7 +10,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110620222242) do
+ActiveRecord::Schema.define(:version => 20110630155552) do
+
+  create_table "eleccion_equipos", :force => true do |t|
+    t.integer  "equipo_id"
+    t.integer  "usuario_id"
+    t.integer  "orden"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "equipos", :force => true do |t|
+    t.string   "nombre"
+    t.integer  "tipo"
+    t.integer  "porra_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "inscripciones", :force => true do |t|
     t.integer  "porra_id"
@@ -20,6 +36,8 @@ ActiveRecord::Schema.define(:version => 20110620222242) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "inscripciones", ["usuario_id", "porra_id"], :name => "inscripcion_index", :unique => true
 
   create_table "mensajes", :force => true do |t|
     t.integer  "usuario_id"

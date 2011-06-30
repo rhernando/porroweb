@@ -1,0 +1,21 @@
+%h1 Listing equipos
+
+%table
+  %tr
+    %th Nombre
+    %th Tipo
+    %th
+    %th
+    %th
+
+  - @equipos.each do |equipo|
+    %tr
+      %td= equipo.nombre
+      %td= equipo.tipo
+      %td= link_to 'Show', equipo
+      %td= link_to 'Edit', edit_equipo_path(equipo)
+      %td= link_to 'Destroy', equipo, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Equipo', new_equipo_path

@@ -4,6 +4,7 @@ class InscripcionesController < ApplicationController
 
   before_filter :authenticate_usuario!
 
+
   def index
     @inscripcions = Inscripcion.all
 
@@ -48,7 +49,8 @@ class InscripcionesController < ApplicationController
   # POST /inscripciones.xml
   def create
     @inscripcion = Inscripcion.new(params[:inscripcion])
-
+    puts params
+    puts @inscripcion.inspect
     respond_to do |format|
       if @inscripcion.save
         format.html { redirect_to(@inscripcion, :notice => 'Inscripcion was successfully created.') }

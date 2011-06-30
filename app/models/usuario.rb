@@ -38,4 +38,8 @@ class Usuario < ActiveRecord::Base
 
   has_many :inscripciones
   has_many :porras, :through => :inscripciones
+
+  #condiciones para las selecciones
+  has_many :equipos, :through => :eleccion_equipos
+
 end

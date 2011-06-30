@@ -1,6 +1,8 @@
 Porroweb::Application.routes.draw do
 
-  resources :inscripciones
+
+
+  resources :equipos
 
   resources :porras
 
@@ -9,10 +11,11 @@ Porroweb::Application.routes.draw do
   resources :noticia
   resources :user, :only => [:index, :show]
 
-  devise_for :usuarios, :controllers => { :sessions => 'usuarios/sessions' }
+  devise_for :usuarios
 
 
   match 'inscripcion/:porra/nueva' => 'inscripciones#new', :as => :inscribir
+  resources :inscripciones
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
