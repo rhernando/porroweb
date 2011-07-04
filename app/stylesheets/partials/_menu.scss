@@ -1,140 +1,138 @@
-@mixin enlace-menu($tamano){
-    border-left:none;
-    border-right:none;
-    font-size:$tamano;
-    color:#DDD;
-    text-decoration:none;
-}
+ @mixin enlace-menu($tamano){
+     border-left:none;
+     border-right:none;
+     font-size:$tamano;
+     color:#DDD;
+     text-decoration:none;
+ }
 
-nav{
-    display:block;
-    margin:0 auto 20px;
-    padding: 7px 6px 0;
-    position:relative;
-    font-size:18px;
-    font-family:fantasy;
-    background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
-    border:1px solid #AAA;
-    line-height: 100%;
-    border-radius: 2em;
-    -webkit-border-radius: 2em;
-    -moz-border-radius: 2em;
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+ nav{
+     display:block;
+     margin:0 auto 20px;
+     padding: 7px 6px 0;
+     font-size:18px;
+     font-family:fantasy;
+     background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
+     border:1px solid #AAA;
+     line-height: 100%;
+     border-radius: 2em;
+     -webkit-border-radius: 2em;
+     -moz-border-radius: 2em;
+     -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+     -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
 
-    ul{
-        .selected a, li:hover > a {
-            background: #666 url("/images/bgimage.gif") repeat-x 0 -110px;
-            color: #FFF;
-            border-top:solid 1px #EEE;
-            -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);    
-            -moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
-            box-shadow: 0 1px 1px rgba(0,0,0, .2);
-        }
+     ul{
+         .selected a, li:hover > a {
+             background: #666 url("/images/bgimage.gif") repeat-x 0 -110px;
+             color: #FFF;
+             border-top:solid 1px #EEE;
+             -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+             -moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+             box-shadow: 0 1px 1px rgba(0,0,0, .2);
+         }
 
-        a{
-            border-radius: 1.6em;
-            -webkit-border-radius: 1.6em;
-            -moz-border-radius: 1.6em;
+         a{
+             border-radius: 1.6em;
+             -webkit-border-radius: 1.6em;
+             -moz-border-radius: 1.6em;
 
-            color: #EEEEEE  ;
-            display: block;
-            font-weight: bold;
-            margin: 0;
-            padding: 8px 20px;
-            text-decoration: none;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+             color: #EEEEEE  ;
+             display: block;
+             font-weight: bold;
+             margin: 0;
+             padding: 8px 20px;
+             text-decoration: none;
+             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 
-        }
+         }
 
-        a:hover {
-            background: #000;
-            color: #fff;
+         a:hover {
+             background: #000;
+             color: #fff;
 
-        }
+         }
 
-        margin: 0;
-        padding: 7px 6px 0;
-        background: #7d7d7d url("/images/bgimage.gif") repeat-x 0 -40px;
-        line-height: 100%;
+         margin: 0;
+         padding: 7px 6px 0;
+         background: #7d7d7d url("/images/bgimage.gif") repeat-x 0 -40px;
+         line-height: 100%;
 
-        border-radius: 2em;
-        -webkit-border-radius: 2em;
-        -moz-border-radius: 2em;
+         border-radius: 2em;
+         -webkit-border-radius: 2em;
+         -moz-border-radius: 2em;
 
-        -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
-        -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
-        padding:0;
-        margin:0;
-        display: inline-block;
+         -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+         -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+         padding:0;
+         margin:0;
+         display: inline-block;
 
-        li{
-            position:relative;
-            float:left;
-            list-style:none;
-            padding: 0 0 5px;
-            margin: 0 2px;
+         ul{
+             z-index:1000;
+             position:absolute;
+             display:none;
+             margin: 0;
+             padding: 0;
+             width:250px;
+             top:35px;
+             left:0;
+             background:#AAA url("/images/bgimage.gif") repeat-x 0 -110px;;
 
-            a{
-                @include enlace-menu(16px);
-                padding-left:30px;
-                padding-right:30px;
-                span{
-                    display:block;
-                    float:right;
-                    margin-left:5px;
-                }
-            }
-            a:focus{
-                outline:none;
-                text-decoration:underline;
-            }
-            a:visited{
-                @include enlace-menu(16px);
-            }
+             li{
+                 float:none;
+                 list-style:none;
+                 padding: 0 0 8px;
+                 margin: 0 5px;
 
-            ul{
-                display:none;
-                position:absolute;
-                margin: 0;
-                padding: 0;
-                width:250px;
-                top:35px;
-                left:0;
-                background:#AAA url("/images/bgimage.gif") repeat-x 0 -110px;;
+                 a{
+                     @include enlace-menu(14px);
+                     padding-left:30px;
+                     padding-right:25px;
+                 }
 
-                li{
-                    float:none;
-                    position:relative;
-                    list-style:none;
-                    padding: 0 0 8px;
-                    margin: 0 5px;
+             }
 
-                    a{
-                        @include enlace-menu(14px);
-                        padding-left:30px;
-                        padding-right:25px;
-                    }
+         }
 
-                }
+         li{
+             position:relative;
+             float:left;
+             list-style:none;
+             padding: 0 0 5px;
+             margin: 0 2px;
 
+             a{
+                 @include enlace-menu(16px);
+                 padding-left:30px;
+                 padding-right:30px;
+                 span{
+                     display:block;
+                     float:right;
+                     margin-left:5px;
+                 }
+             }
+             a:focus{
+                 outline:none;
+                 text-decoration:underline;
+             }
+             a:visited{
+                 @include enlace-menu(16px);
+             }
 
+         }
 
-            }
-        }
-
-        li:hover > ul{
-            display:block;
-        }
-    }
-    ul:after{
-        content:".";
-        display:block;
-        height:0;
-        clear:both;
-        visibility:hidden;
-    }
+         li:hover > ul{
+             display:block;
+         }
+     }
+     ul:after{
+         content:".";
+         display:block;
+         height:0;
+         clear:both;
+         visibility:hidden;
+     }
 
 
-}
+ }
 

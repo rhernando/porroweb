@@ -412,7 +412,6 @@ nav {
   display: block;
   margin: 0 auto 20px;
   padding: 7px 6px 0;
-  position: relative;
   font-size: 18px;
   font-family: fantasy;
   background: black url("/images/bgimage.gif") repeat-x 0 -40px;
@@ -424,7 +423,7 @@ nav {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-/* line 25, ../../app/stylesheets/partials/_menu.scss */
+/* line 24, ../../app/stylesheets/partials/_menu.scss */
 nav ul {
   margin: 0;
   padding: 7px 6px 0;
@@ -439,7 +438,7 @@ nav ul {
   margin: 0;
   display: inline-block;
 }
-/* line 26, ../../app/stylesheets/partials/_menu.scss */
+/* line 25, ../../app/stylesheets/partials/_menu.scss */
 nav ul .selected a, nav ul li:hover > a {
   background: #666666 url("/images/bgimage.gif") repeat-x 0 -110px;
   color: #FFF;
@@ -448,7 +447,7 @@ nav ul .selected a, nav ul li:hover > a {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 35, ../../app/stylesheets/partials/_menu.scss */
+/* line 34, ../../app/stylesheets/partials/_menu.scss */
 nav ul a {
   border-radius: 1.6em;
   -webkit-border-radius: 1.6em;
@@ -461,12 +460,41 @@ nav ul a {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 50, ../../app/stylesheets/partials/_menu.scss */
+/* line 49, ../../app/stylesheets/partials/_menu.scss */
 nav ul a:hover {
   background: #000;
   color: #fff;
 }
-/* line 71, ../../app/stylesheets/partials/_menu.scss */
+/* line 70, ../../app/stylesheets/partials/_menu.scss */
+nav ul ul {
+  z-index: 1000;
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  top: 35px;
+  left: 0;
+  background: #aaaaaa url("/images/bgimage.gif") repeat-x 0 -110px;
+}
+/* line 81, ../../app/stylesheets/partials/_menu.scss */
+nav ul ul li {
+  float: none;
+  list-style: none;
+  padding: 0 0 8px;
+  margin: 0 5px;
+}
+/* line 87, ../../app/stylesheets/partials/_menu.scss */
+nav ul ul li a {
+  border-left: none;
+  border-right: none;
+  font-size: 14px;
+  color: #DDD;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+/* line 97, ../../app/stylesheets/partials/_menu.scss */
 nav ul li {
   position: relative;
   float: left;
@@ -474,7 +502,7 @@ nav ul li {
   padding: 0 0 5px;
   margin: 0 2px;
 }
-/* line 78, ../../app/stylesheets/partials/_menu.scss */
+/* line 104, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a {
   border-left: none;
   border-right: none;
@@ -484,18 +512,18 @@ nav ul li a {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 82, ../../app/stylesheets/partials/_menu.scss */
+/* line 108, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a span {
   display: block;
   float: right;
   margin-left: 5px;
 }
-/* line 88, ../../app/stylesheets/partials/_menu.scss */
+/* line 114, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a:focus {
   outline: none;
   text-decoration: underline;
 }
-/* line 92, ../../app/stylesheets/partials/_menu.scss */
+/* line 118, ../../app/stylesheets/partials/_menu.scss */
 nav ul li a:visited {
   border-left: none;
   border-right: none;
@@ -503,40 +531,11 @@ nav ul li a:visited {
   color: #DDD;
   text-decoration: none;
 }
-/* line 96, ../../app/stylesheets/partials/_menu.scss */
-nav ul li ul {
-  display: none;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 250px;
-  top: 35px;
-  left: 0;
-  background: #aaaaaa url("/images/bgimage.gif") repeat-x 0 -110px;
-}
-/* line 106, ../../app/stylesheets/partials/_menu.scss */
-nav ul li ul li {
-  float: none;
-  position: relative;
-  list-style: none;
-  padding: 0 0 8px;
-  margin: 0 5px;
-}
-/* line 113, ../../app/stylesheets/partials/_menu.scss */
-nav ul li ul li a {
-  border-left: none;
-  border-right: none;
-  font-size: 14px;
-  color: #DDD;
-  text-decoration: none;
-  padding-left: 30px;
-  padding-right: 25px;
-}
-/* line 126, ../../app/stylesheets/partials/_menu.scss */
+/* line 124, ../../app/stylesheets/partials/_menu.scss */
 nav ul li:hover > ul {
   display: block;
 }
-/* line 130, ../../app/stylesheets/partials/_menu.scss */
+/* line 128, ../../app/stylesheets/partials/_menu.scss */
 nav ul:after {
   content: ".";
   display: block;

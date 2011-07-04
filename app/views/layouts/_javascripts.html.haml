@@ -32,18 +32,18 @@
     g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
     s.parentNode.insertBefore(g,s)}(document,"script"));
 
-:javascript
-  (function($){
-    var nav = $("#topNav");
-    nav.find("li").each(function() {
-      if ($(this).find("ul").length > 0) {
-        $("<span>").text("^").appendTo($(this).children(":first"));
-        $(this).mouseenter(function() {
-          $(this).find("ul").stop(true, true).slideDown();
-        });
-        $(this).mouseleave(function() {
-          $(this).find("ul").stop(true, true).slideUp();
-        });
-      }
-    });
-  })(jQuery);
+-#:javascript
+-#  (function($){
+-#    var nav = $("#topNav").find("ul");
+-#    nav.find("li").each(function() {
+-#      if ($(this).find("ul").length > 0) {
+-#        $("<span>").text("^").appendTo($(this).children(":first"));
+-#        $(this).mouseenter(function() {
+-#          $(this).find("ul").stop(true, true).slideDown();
+-#        });
+-#        $(this).mouseleave(function() {
+-#          $(this).find("ul").stop(true, true).slideUp();
+-#        });
+-#      }
+-#    });
+-#  })(jQuery);
