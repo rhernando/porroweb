@@ -11,7 +11,9 @@
     = @porra.usuarios.count
 
   - if @porra.usario_inscrito? current_usuario
-    %p estas inscrito
+    %p Ya estás inscrito
+    - if @porra.fecha_inicio > DateTime.now
+      = link_to "Ir a Seleccion", "#"
   - else
     %p
       = link_to "incribirse",  inscribir_url(:porra => @porra)

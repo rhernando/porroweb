@@ -52,6 +52,7 @@ SimpleNavigation::Configuration.run do |navigation|
       end
     end
     primary.item :panel_usuario, 'Mi Cuenta', user_path(current_usuario) if usuario_signed_in?
+    primary.item :mensajes, 'Mensajes', mensajes_path
     primary.item :usuarios, "Participantes", user_index_path
     primary.item :noticias, "Noticias", noticia_path
     primary.item :home, "Estadisticas", root_path

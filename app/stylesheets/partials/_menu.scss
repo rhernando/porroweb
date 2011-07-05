@@ -10,7 +10,7 @@
      display:block;
      margin:0 auto 20px;
      padding: 7px 6px 0;
-     font-size:18px;
+     font-size:12px;
      font-family:Verdana;
      background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
      border:1px solid #AAA;
@@ -102,7 +102,7 @@
              margin: 0 2px;
 
              a{
-                 @include enlace-menu(16px);
+                 @include enlace-menu(13px);
                  padding-left:30px;
                  padding-right:30px;
                  span{

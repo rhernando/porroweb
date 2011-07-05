@@ -42,6 +42,9 @@ class MensajesController < ApplicationController
   def create
     @mensaje = Mensaje.new(params[:mensaje])
 
+    @mensaje.fecha = Time.now
+    @mensaje.usuario = current_usuario
+
     respond_to do |format|
       if @mensaje.save
         format.html { redirect_to(@mensaje, :notice => 'Mensaje was successfully created.') }

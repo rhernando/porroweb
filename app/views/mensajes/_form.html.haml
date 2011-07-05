@@ -6,14 +6,7 @@
         - @mensaje.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.label :usuario_id
-    = f.text_field :usuario_id
-  .field
-    = f.label :fecha
-    = f.date_select :fecha
-  .field
-    = f.label :texto
+  .field_mensaje
     = f.text_area :texto
   .actions
-    = f.submit 'Save'
+    = f.submit 'Enviar Mensaje'

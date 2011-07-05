@@ -68,7 +68,10 @@ header {
     width:760px;
 }
 
-footer {}
+footer {
+    clear:both;
+    padding-top:30px;
+}
 
 aside{
     display: table-cell;
@@ -89,4 +92,56 @@ aside{
 h1{
     font-size:15px;
     text-shadow:0 2px 0 #550000;
+}
+
+
+
+textarea{
+    color:#666;
+    font-size:14px;
+    -moz-border-radius: 8px; -webkit-border-radius: 8px;
+    margin:5px 0px 10px 0px;
+    padding:10px;
+    height:75px;
+    width:350px;
+    border:#999 1px solid;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+}
+
+textarea:focus{
+    color:#FFF;
+    outline:none;
+    border:#550000 1px solid;
+}
+
+button, label, input[type="button"], input[type="submit"] {
+	color: #ffffff;
+	padding: 5px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#550000 0%,
+		#cc0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#550000),
+		to(#cc0000));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #999999;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
 }
