@@ -17,6 +17,9 @@ gem 'devise'
 gem "simple-navigation"
 gem "will_paginate", "3.0.pre2"
 
+
+gem 'gravatar_image_tag'
+
 gem "annotate"
 # Use unicorn as the web server
 # gem 'unicorn'

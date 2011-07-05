@@ -1,1 +1,21 @@
-%p datos de mi cuenta
+%h1 Datos del Usuario
+
+.caja
+
+  .izquierda
+    %p
+      %strong e-mail
+      =@usuario.email
+
+    %p
+      %strong Nombre
+      =@usuario.nombre
+
+    %p
+      %strong Apellido
+      =@usuario.apellido
+
+  .derecha
+    %p
+      = gravatar_image_tag(@usuario.email.gsub('spam', 'mdeering'), :alt => @usuario.nombre)
+

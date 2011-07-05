@@ -257,7 +257,7 @@ nav ul, nav li {
 body, select, input, textarea {
   color: #aa9999;
   background-color: black;
-  font-family: fantasy;
+  font-family: Verdana;
 }
 
 /* line 16, ../../app/stylesheets/partials/_page.scss */
@@ -340,6 +340,12 @@ aside {
   text-shadow: 0 2px 0 black;
 }
 
+/* line 89, ../../app/stylesheets/partials/_page.scss */
+h1 {
+  font-size: 15px;
+  text-shadow: 0 2px 0 #550000;
+}
+
 @media print {
   /* line 10, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   * {
@@ -413,7 +419,7 @@ nav {
   margin: 0 auto 20px;
   padding: 7px 6px 0;
   font-size: 18px;
-  font-family: fantasy;
+  font-family: Verdana;
   background: black url("/images/bgimage.gif") repeat-x 0 -40px;
   border: 1px solid #AAA;
   line-height: 100%;
@@ -571,4 +577,28 @@ article .line {
   border-bottom: 1px solid #551111;
   margin: 1em 0;
   overflow: hidden;
+}
+
+/* line 23, ../../app/stylesheets/partials/_estilos.scss */
+.caja {
+  padding: 5px 20px 5px 20px;
+  width: 90%;
+  box-shadow: 10px 10px 5px #550000;
+  -moz-box-shadow: 10px 10px 5px #550000;
+  -webkit-box-shadow: 10px 10px 5px #550000;
+}
+
+/* line 32, ../../app/stylesheets/partials/_estilos.scss */
+#borrar {
+  padding: 10px;
+}
+
+/* line 36, ../../app/stylesheets/partials/_estilos.scss */
+.derecha {
+  text-align: right;
+}
+
+/* line 40, ../../app/stylesheets/partials/_estilos.scss */
+.izquierda {
+  float: left;
 }

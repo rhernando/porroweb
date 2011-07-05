@@ -1,32 +1,35 @@
 %p#notice= notice
 
-%h1= @porra.titulo
+.caja
 
-%p= @porra.descripcion
+  %h1= @porra.titulo
 
-%p
-  Usuarios inscritos:
-  = @porra.usuarios.count
+  %p= @porra.descripcion
 
-- if @porra.usario_inscrito? current_usuario
-  %p estas inscrito
-- else
   %p
-    = link_to "incribirse",  inscribir_url(:porra => @porra)
+    Usuarios inscritos:
+    = @porra.usuarios.count
+
+  - if @porra.usario_inscrito? current_usuario
+    %p estas inscrito
+  - else
+    %p
+      = link_to "incribirse",  inscribir_url(:porra => @porra)
 
 
 
+#borrar
 
-%p
-  %b Titulo:
-  = @porra.titulo
-%p
-  %b Importe:
-  = @porra.importe
-%p
-  %b Inscripcion:
-  = @porra.inscripcion_id
+  %p
+    %b Titulo:
+    = @porra.titulo
+  %p
+    %b Importe:
+    = @porra.importe
+  %p
+    %b Inscripcion:
+    = @porra.inscripcion_id
 
-= link_to 'Edit', edit_porra_path(@porra)
-\|
-= link_to 'Back', porras_path
+  = link_to 'Edit', edit_porra_path(@porra)
+  \|
+  = link_to 'Back', porras_path

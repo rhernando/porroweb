@@ -1,4 +1,7 @@
-%p lista usuarios
+%h1 Lista de Usuarios registrados
 
-- @usuarios.each do |u|
-  %p= u.nombre
+.caja
+  %ul
+    - @usuarios.each do |u|
+      %li
+        =link_to u.nombre, user_path(u.id)
