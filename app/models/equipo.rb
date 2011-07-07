@@ -1,11 +1,12 @@
 # == Schema Information
-# Schema version: 20110630155552
+# Schema version: 20110707171704
 #
 # Table name: equipos
 #
 #  id         :integer         not null, primary key
 #  nombre     :string(255)
 #  tipo       :integer
+#  porra_id   :integer
 #  created_at :datetime
 #  updated_at :datetime
 #
