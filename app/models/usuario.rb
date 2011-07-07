@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110607194353
+# Schema version: 20110707171704
 #
 # Table name: usuarios
 #
@@ -21,6 +21,7 @@
 #  apellido               :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
+#  apodo                  :string(255)
 #
 
 class Usuario < ActiveRecord::Base
@@ -29,7 +30,7 @@ class Usuario < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates_presence_of :nombre
+  validates_presence_of :nombre, :apodo
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me

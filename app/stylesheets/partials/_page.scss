@@ -77,16 +77,16 @@ aside{
     display: table-cell;
     width: 200px;
     display: block;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
+    .seccion{
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
+        margin:3em 0;
+        padding:20px;
 
-	background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
-	margin:3em 0;
-	padding:20px;
-
-	text-shadow:0 2px 0 black;
-
+        text-shadow:0 2px 0 black;
+    }
 }
 
 h1{
@@ -120,7 +120,7 @@ textarea:focus{
     border:#550000 1px solid;
 }
 
-button, label, input[type="button"], input[type="submit"] {
+button, input[type="button"], input[type="submit"] {
 	color: #ffffff;
 	padding: 5px 10px;
 	background: -moz-linear-gradient(

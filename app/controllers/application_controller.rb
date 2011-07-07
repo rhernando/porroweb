@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  before_filter :titulo, :google_key, :carga_porras, :users_online
+  before_filter :titulo, :google_key, :carga_porras, :users_online, :ultimos_mensajes
 
   def titulo
     @title = ""
@@ -17,6 +17,10 @@ class ApplicationController < ActionController::Base
 
   def users_online
     @user_online = Usuario.all(:conditions => ["current_sign_in_ip <> '' "])
+  end
+
+  def ultimos_mensajes
+    @ultimos_mensajes = Mensaje.order(:fecha).last(5)
   end
 
 end

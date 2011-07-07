@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110607194353
+# Schema version: 20110707171704
 #
 # Table name: usuarios
 #
@@ -21,6 +21,7 @@
 #  apellido               :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
+#  apodo                  :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

@@ -1,4 +1,12 @@
-#usuarios_online
+#usuarios_online.seccion
   %h1 Usuarios conectados:
   - @user_online.each do |usuario|
     %p= usuario.nombre
+
+#ultimos_mensajes.seccion
+  %h1 Últimos mensajes:
+  - @ultimos_mensajes.each do |msg|
+    %p
+      %strong= msg.usuario.apodo
+      = msg.texto
+  = link_to 'Ver mensajes', mensajes_path
