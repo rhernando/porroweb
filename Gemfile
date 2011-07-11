@@ -17,6 +17,8 @@ gem "simple-navigation"
 gem "will_paginate", "3.0.pre2"
 
 
+gem 'compass-jquery-plugin'
+
 gem 'gravatar_image_tag'
 
 gem "annotate"

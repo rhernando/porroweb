@@ -14,6 +14,9 @@
     = f.text_field :tipo
   .field
     = f.label :equipo
+  .field
+    = f.label :nombre_imagen
+    = f.text_field :nombre_imagen
 
   porrA:
   = f.collection_select :porra_id, Porra.all, :id, :titulo

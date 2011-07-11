@@ -1,4 +1,15 @@
-= @equipos
+- @equipos.each do |grupo, eq|
+  .grupo-select
+    %h1
+      Grupo
+      = grupo
+    - eq.each do |equipo|
+      %p
+        %img{:src => "#{equipo.ruta_imagen}", :class => 'img-select'}
+        = equipo.nombre
+
+
+
 
 
 

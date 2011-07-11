@@ -1,5 +1,18 @@
+class Porra < ActiveRecord::Base
+
+  LIGA = "LIGA"
+
+  has_many :inscripciones
+  has_many :equipos
+  has_many :usuarios, :through => :inscripciones
+
+  def usario_inscrito?(usuario)
+    usuarios.include? usuario
+  end
+end
+
+
 # == Schema Information
-# Schema version: 20110620222242
 #
 # Table name: porras
 #
@@ -11,16 +24,6 @@
 #  updated_at     :datetime
 #  descripcion    :text
 #  fecha_inicio   :date
+#  code           :string(255)
 #
-
-class Porra < ActiveRecord::Base
-
-  has_many :inscripciones
-  has_many :equipos
-  has_many :usuarios, :through => :inscripciones
-
-  def usario_inscrito?(usuario)
-    usuarios.include? usuario
-  end
-end
 

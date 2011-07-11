@@ -397,6 +397,16 @@ button, input[type="button"], input[type="submit"] {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
 
+/* line 149, ../../app/stylesheets/partials/_page.scss */
+.img-select {
+  width: 50px;
+}
+
+/* line 153, ../../app/stylesheets/partials/_page.scss */
+.grupo-select {
+  padding-bottom: 10px;
+}
+
 @media print {
   /* line 10, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   * {

@@ -13,7 +13,7 @@
   - if @porra.usario_inscrito? current_usuario
     %p Ya estás inscrito
     - if @porra.fecha_inicio > DateTime.now
-      = link_to "Ir a Seleccion", seleccion_index_path(:idporra => @porra.id)
+      = link_to "Ir a Seleccion", new_seleccion_path(:idporra => @porra.id)
   - else
     %p
       = link_to "incribirse",  inscribir_url(:porra => @porra)

@@ -9,4 +9,11 @@ class SeleccionController < ApplicationController
   def show
 
   end
+
+  def new
+    @porra = Porra.find params[:idporra]
+    @equipos = @porra.equipos.group_by(&:tipo).sort
+
+    @e_equipos = EleccionEquipo.new
+  end
 end
