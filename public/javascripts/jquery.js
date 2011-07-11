@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v1.5.2
+ * jQuery JavaScript Library v@VERSION
  * http://jquery.com/
  *
  * Copyright 2011, John Resig
@@ -11,12 +11,14 @@
  * Copyright 2011, The Dojo Foundation
  * Released under the MIT, BSD, and GPL Licenses.
  *
- * Date: Thu Mar 31 15:28:23 2011 -0400
+ * Date: @DATE
  */
 (function( window, undefined ) {
 
 // Use the correct document accordingly with window argument (sandbox)
 var document = window.document;
+
+
 var jQuery = (function() {
 
 // Define a local copy of jQuery
@@ -196,7 +198,7 @@ jQuery.fn = jQuery.prototype = {
 	selector: "",
 
 	// The current version of jQuery being used
-	jquery: "1.5.2",
+	jquery: "@VERSION",
 
 	// The default length of a jQuery object is 0
 	length: 0,
@@ -916,6 +918,8 @@ return jQuery;
 })();
 
 
+(function( jQuery ) {
+
 var // Promise methods
 	promiseMethods = "then done fail isResolved isRejected promise".split( " " ),
 	// Static reference to slice
@@ -1085,8 +1089,10 @@ jQuery.extend({
 	}
 });
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 (function() {
 
@@ -1318,8 +1324,10 @@ jQuery.extend({
 	// release memory in IE
 	div = all = a = null;
 })();
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var rbrace = /^(?:\{.*\}|\[.*\])$/;
 
@@ -1639,8 +1647,10 @@ function isEmptyDataObject( obj ) {
 	return true;
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 jQuery.extend({
 	queue: function( elem, type, data ) {
@@ -1738,8 +1748,10 @@ jQuery.fn.extend({
 	}
 });
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var rclass = /[\n\t\r]/g,
 	rspaces = /\s+/,
@@ -2127,8 +2139,10 @@ jQuery.extend({
 	}
 });
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var rnamespaces = /\.(.*)$/,
 	rformElems = /^(?:textarea|input|select)$/i,
@@ -3312,6 +3326,8 @@ jQuery.each( ("blur focus focusin focusout load resize scroll unload click dblcl
 		jQuery.attrFn[ name ] = true;
 	}
 });
+
+})( jQuery );
 
 
 /*!
@@ -4722,6 +4738,8 @@ jQuery.contains = Sizzle.contains;
 })();
 
 
+(function( jQuery ) {
+
 var runtil = /Until$/,
 	rparentsprev = /^(?:parents|prevUntil|prevAll)/,
 	// Note: This RegExp should be improved, or likely pulled from Sizzle
@@ -5030,8 +5048,10 @@ function winnow( elements, qualifier, keep ) {
 	});
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var rinlinejQuery = / jQuery\d+="(?:\d+|null)"/g,
 	rleadingWhitespace = /^\s+/,
@@ -5737,8 +5757,10 @@ function evalScript( i, elem ) {
 	}
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var ralpha = /alpha\([^)]*\)/i,
 	ropacity = /opacity=([^)]*)/,
@@ -6097,8 +6119,10 @@ if ( jQuery.expr && jQuery.expr.filters ) {
 	};
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var r20 = /%20/g,
 	rbracket = /\[\]$/,
@@ -7078,8 +7102,10 @@ function ajaxConvert( s, response ) {
 	return response;
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var jsc = jQuery.now(),
 	jsre = /(\=)\?(&|$)|\?\?/i;
@@ -7159,8 +7185,10 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 	}
 } );
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 // Install script dataType
 jQuery.ajaxSetup({
@@ -7248,8 +7276,10 @@ jQuery.ajaxTransport( "script", function(s) {
 	}
 } );
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var // #5280: next active xhr id and list of active xhrs' callbacks
 	xhrId = jQuery.now(),
@@ -7470,8 +7500,10 @@ if ( jQuery.support.ajax ) {
 	});
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var elemdisplay = {},
 	rfxtypes = /^(?:toggle|show|hide)$/,
@@ -7998,8 +8030,10 @@ function defaultDisplay( nodeName ) {
 	return elemdisplay[ nodeName ];
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 var rtable = /^t(?:able|d|h)$/i,
 	rroot = /^(?:body|html)$/i;
@@ -8302,8 +8336,10 @@ function getWindow( elem ) {
 			false;
 }
 
+})( jQuery );
 
 
+(function( jQuery ) {
 
 // Create innerHeight, innerWidth, outerHeight and outerWidth methods
 jQuery.each([ "Height", "Width" ], function( i, name ) {
@@ -8368,6 +8404,8 @@ jQuery.each([ "Height", "Width" ], function( i, name ) {
 	};
 
 });
+
+})( jQuery );
 
 
 window.jQuery = window.$ = jQuery;
