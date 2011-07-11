@@ -1,12 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'annotate-models'
 
 gem 'haml'
 gem 'compass'
@@ -50,7 +49,6 @@ group :development, :test do
   gem 'launchy'
   gem 'spork'
   gem 'factory_girl_rails'
-  gem 'annotate-models'
   gem 'haml-rails'
 end
 
