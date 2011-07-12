@@ -2,6 +2,8 @@ Porroweb::Application.routes.draw do
 
 
 
+  get "js/scriptSeleccion"
+
   resources :equipos
 
   resources :porras

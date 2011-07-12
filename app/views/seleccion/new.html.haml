@@ -1,15 +1,20 @@
-- @equipos.each do |grupo, eq|
-  .grupo-select
-    %h1
-      Grupo
-      = grupo
-    - eq.each do |equipo|
-      %p
-        %img{:src => "#{equipo.ruta_imagen}", :class => 'img-select'}
-        = equipo.nombre
+- content_for :javascripts do
+  = javascript_include_tag "/js/scriptSeleccion.js"
 
 
+#seleccionables
+  - @equipos.each do |grupo, eq|
+    .grupo-select
+      %h1
+        Grupo
+        = grupo
+      %ul
+        - eq.each do |equipo|
+          %li{:class => 'equipo', :id => equipo.id}
+            %img{:src => "#{equipo.ruta_imagen}", :class => 'img-select'}
+            = equipo.nombre
 
-
+#seleccion
+  %h1 Equipos seleccionados
 
 

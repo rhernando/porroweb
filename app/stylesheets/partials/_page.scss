@@ -150,6 +150,40 @@ button, input[type="button"], input[type="submit"] {
     width: 50px;
 }
 
-.grupo-select{
-    padding-bottom: 10px;
+#seleccionables{
+    display:block;
+    float:left;
+    overflow:none;
+    margin-right: 15px;
+    width: 250px;
+    .grupo-select{
+        padding-bottom: 10px;
+        li{
+            border: 1px solid #999999;
+            -moz-border-radius:10px;
+            -webkit-border-radius:10px;
+            border-radius:10px;
+            background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
+            padding: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+
+        }
+    }
+
+}
+
+#seleccion{
+    overflow: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 500px;
+    width: 450px;
+    border: 1px solid #999999;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
+    display:block;
+    padding:5px;
 }
