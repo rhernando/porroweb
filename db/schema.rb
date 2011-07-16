@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110711185646) do
+ActiveRecord::Schema.define(:version => 20110716190034) do
 
   create_table "eleccion_equipos", :force => true do |t|
     t.integer  "equipo_id"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20110711185646) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "nombre_imagen"
+    t.integer  "valor"
   end
 
   create_table "inscripciones", :force => true do |t|
@@ -65,6 +66,10 @@ ActiveRecord::Schema.define(:version => 20110711185646) do
     t.text     "descripcion"
     t.date     "fecha_inicio"
     t.string   "code"
+    t.integer  "max_val_equipos"
+    t.integer  "max_val_jugadores"
+    t.integer  "num_equipos"
+    t.integer  "num_jugadores"
   end
 
   create_table "usuarios", :force => true do |t|

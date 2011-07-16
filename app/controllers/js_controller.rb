@@ -7,6 +7,9 @@ class JsController < ApplicationController
   end
 
   def scriptSeleccion
+    p params
+    @porra = Porra.find params[:idporra]
+
   end
 
 end

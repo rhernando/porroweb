@@ -2,7 +2,8 @@ Porroweb::Application.routes.draw do
 
 
 
-  get "js/scriptSeleccion"
+  #get "js/scriptSeleccion"
+  match "js/:idporra/scriptSeleccion" => 'js#scriptSeleccion'
 
   resources :equipos
 

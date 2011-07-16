@@ -1,5 +1,5 @@
 - content_for :javascripts do
-  = javascript_include_tag "/js/scriptSeleccion.js"
+  = javascript_include_tag "/js/#{@porra.id}/scriptSeleccion"
 
 
 #seleccionables
@@ -10,11 +10,15 @@
         = grupo
       %ul
         - eq.each do |equipo|
-          %li{:class => 'equipo', :id => equipo.id}
-            %img{:src => "#{equipo.ruta_imagen}", :class => 'img-select'}
-            = equipo.nombre
+          %li{:class => 'equipo', :id => "li-#{equipo.id}"}
+            %img{:src => "#{equipo.ruta_imagen}", :class => 'img-select', :id => "#{equipo.id}-p-#{equipo.valor}"}
+            %p
+              = equipo.nombre
 
 #seleccion
   %h1 Equipos seleccionados
+  #divequipos
+  %button#validar
+    Validar Selección
 
 
