@@ -22,6 +22,9 @@ gem 'compass-jquery-plugin'
 gem 'gravatar_image_tag'
 
 gem "annotate"
+
+gem 'devise_lastseenable'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -44,14 +47,14 @@ gem "annotate"
 # group :development, :test do
 #   gem 'webrat'
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'cucumber-rails'
-  gem 'shoulda'
-  gem 'capybara'
-  gem 'launchy'
-  gem 'spork'
-  gem 'factory_girl_rails'
-  gem 'haml-rails'
+  #gem 'rspec-rails'
+  #gem 'cucumber-rails'
+  #gem 'shoulda'
+  #gem 'capybara'
+  #gem 'launchy'
+  #gem 'spork'
+  #gem 'factory_girl_rails'
+  #gem 'haml-rails'
 end
 
 # end

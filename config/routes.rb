@@ -12,7 +12,7 @@ Porroweb::Application.routes.draw do
   resources :mensajes
 
   resources :noticia
-  resources :user, :only => [:index, :show]
+  resources :user, :only => [:index, :show, :cerrar]
 
   devise_for :usuarios
 

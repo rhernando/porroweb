@@ -56,6 +56,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :usuarios, "Participantes", user_index_path
     primary.item :noticias, "Noticias", noticia_path
     primary.item :home, "Estadisticas", root_path
+    primary.item :logout, "Cerrar sesión", destroy_usuario_session_path if usuario_signed_in?
 
     # Add an item which has a sub navigation (same params, but with block)
     #primary.item :key_2, 'name', url, options do |sub_nav|
