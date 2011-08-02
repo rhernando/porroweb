@@ -408,31 +408,35 @@ button, input[type="button"], input[type="submit"] {
   float: left;
   overflow: none;
   margin-right: 15px;
-  width: 250px;
+  width: 430px;
 }
 /* line 159, ../../app/stylesheets/partials/_page.scss */
 #seleccionables .grupo-select {
   padding-bottom: 10px;
 }
 /* line 161, ../../app/stylesheets/partials/_page.scss */
-#seleccionables .grupo-select li {
+#seleccionables .grupo-select ul {
   border: 1px solid #999999;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: black url("/images/bgimage.gif") repeat-x 0 -40px;
+  background: black url("/images/bgimage.gif") repeat-x 0 -10px;
+}
+/* line 168, ../../app/stylesheets/partials/_page.scss */
+#seleccionables .grupo-select ul li {
   padding: 5px;
   cursor: pointer;
   margin-top: 10px;
+  display: inline;
 }
 
-/* line 176, ../../app/stylesheets/partials/_page.scss */
+/* line 180, ../../app/stylesheets/partials/_page.scss */
 #seleccion {
   overflow: auto;
   margin-left: 15px;
   margin-right: 15px;
   height: 450px;
-  width: 450px;
+  width: 250px;
   border: 1px solid #999999;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -442,21 +446,21 @@ button, input[type="button"], input[type="submit"] {
   padding: 5px;
   position: relative;
 }
-/* line 189, ../../app/stylesheets/partials/_page.scss */
+/* line 193, ../../app/stylesheets/partials/_page.scss */
 #seleccion img {
   cursor: pointer;
 }
-/* line 194, ../../app/stylesheets/partials/_page.scss */
-#seleccion #validar {
+/* line 198, ../../app/stylesheets/partials/_page.scss */
+#seleccion #pie_seleccion {
   position: absolute;
   bottom: 5px;
   left: 5px;
 }
-/* line 200, ../../app/stylesheets/partials/_page.scss */
+/* line 204, ../../app/stylesheets/partials/_page.scss */
 #seleccion #divequipos {
   margin: 10px;
 }
-/* line 202, ../../app/stylesheets/partials/_page.scss */
+/* line 206, ../../app/stylesheets/partials/_page.scss */
 #seleccion #divequipos img {
   padding: 5px;
 }

@@ -14,6 +14,8 @@
     %p Ya estás inscrito
     - if @porra.fecha_inicio > DateTime.now
       = link_to "Ir a Seleccion", new_seleccion_path(:idporra => @porra.id)
+    - else
+      = link_to "clasificacion", '#'
   - else
     %p
       = link_to "incribirse",  inscribir_url(:porra => @porra)

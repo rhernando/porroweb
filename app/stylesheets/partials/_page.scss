@@ -155,19 +155,23 @@ button, input[type="button"], input[type="submit"] {
     float:left;
     overflow:none;
     margin-right: 15px;
-    width: 250px;
+    width: 430px;
     .grupo-select{
         padding-bottom: 10px;
-        li{
+        ul{
             border: 1px solid #999999;
             -moz-border-radius:10px;
             -webkit-border-radius:10px;
             border-radius:10px;
-            background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
-            padding: 5px;
-            cursor: pointer;
-            margin-top: 10px;
+            background:#000 url("/images/bgimage.gif") repeat-x 0 -10px;
 
+            li{
+                padding: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+                display: inline;
+
+            }
         }
     }
 
@@ -178,7 +182,7 @@ button, input[type="button"], input[type="submit"] {
     margin-left: 15px;
     margin-right: 15px;
     height: 450px;
-    width: 450px;
+    width: 250px;
     border: 1px solid #999999;
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
@@ -191,7 +195,7 @@ button, input[type="button"], input[type="submit"] {
     }
     position:relative;
 
-    #validar{
+    #pie_seleccion{
         position:absolute;
         bottom:5px;
         left:5px;

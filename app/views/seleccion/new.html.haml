@@ -10,15 +10,24 @@
         = grupo
       %ul
         - eq.each do |equipo|
-          %li{:class => 'equipo', :id => "li-#{equipo.id}"}
+          %li.equipo{:id => "li-#{equipo.id}"}
             %img{:src => "#{equipo.ruta_imagen}", :class => 'img-select', :id => "#{equipo.id}-p-#{equipo.valor}"}
-            %p
-              = equipo.nombre
+
+
 
 #seleccion
   %h1 Equipos seleccionados
   #divequipos
-  %button#validar
-    Validar Selección
+  #pie_seleccion
+    %p
+      Equipos en selección:
+      %strong#eqs 0
+    %p
+      Puntos en selección:
+      %strong#pts 0
+
+    %button#validar
+      Validar Selección
+
 
 
