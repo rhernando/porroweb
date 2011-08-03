@@ -13,20 +13,23 @@ end
 
 
 
+
 # == Schema Information
 #
 # Table name: porras
 #
-#  id                :integer         not null, primary key
+#  id                :integer(4)      not null, primary key
 #  titulo            :string(255)
 #  importe           :float
-#  inscripcion_id    :integer
+#  inscripcion_id    :integer(4)
 #  created_at        :datetime
 #  updated_at        :datetime
 #  descripcion       :text
 #  fecha_inicio      :date
 #  code              :string(255)
-#  max_val_equipos   :integer
-#  max_val_jugadores :integer
+#  max_val_equipos   :integer(4)
+#  max_val_jugadores :integer(4)
+#  num_equipos       :integer(4)
+#  num_jugadores     :integer(4)
 #
 

@@ -13,7 +13,25 @@
     = f.label :importe
     = f.text_field :importe
   .field
-    = f.label :inscripcion_id
-    = f.text_field :inscripcion_id
+    = f.label :descripcion
+    = f.text_field :descripcion
+  .field
+    = f.label :fecha_inicio
+    = f.date_select :fecha_inicio
+  .field
+    = f.label :code
+    = f.text_field :code
+  .field
+    = f.label :num_equipos
+    = f.text_field :num_equipos
+  .field
+    = f.label :num_jugadores
+    = f.text_field :num_jugadores
+  .field
+    = f.label :max_val_equipos
+    = f.text_field :max_val_equipos
+  .field
+    = f.label :max_val_jugadores
+    = f.text_field :max_val_jugadores
   .actions
     = f.submit 'Save'
