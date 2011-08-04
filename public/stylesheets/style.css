@@ -726,3 +726,15 @@ article .line {
 #ultimos_mensajes p {
   padding-top: 5px;
 }
+
+/* line 1, ../../app/stylesheets/partials/_flash.scss */
+div.notice {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 40%;
+  border: 5px solid #ccF;
+  margin-top: 50px;
+  padding: 20px;
+  font-weight: bold;
+}

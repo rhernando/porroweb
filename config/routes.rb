@@ -19,6 +19,8 @@ Porroweb::Application.routes.draw do
 
   match 'inscripcion/:porra/nueva' => 'inscripciones#new', :as => :inscribir
   resources :inscripciones
+
+  match 'seleccion/crear' => 'seleccion#create', :as => :crea_seleccion
   resources :seleccion
 
   # The priority is based upon order of creation:

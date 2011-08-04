@@ -18,10 +18,15 @@
             return false;
         }
 
-
-        $.post({
-          url: '/seleccion/create'
-        });
+        var dataArray = new Array();
+        for (var i = 0; i < imgs.length;i++){
+            dataArray.push(imgs[i].id.substring(0,imgs[i].id.indexOf("-")));
+        }
+        $.post(
+            "<%= crea_seleccion_path %>",
+            { 'seleccion[]': dataArray,
+               'porra': '<%= @porra.code %>'}
+        );
         return false;
     });
   });

@@ -1,0 +1,6 @@
+<% if !flash[:error].present? %>
+    $("#seleccionables").html("<%= escape_javascript(render(:partial => 'seleccionado') ) %>");
+<% end %>
+
+$("#flash").html("<%= escape_javascript(render(:partial => 'layouts/flashes') ) %>");
+<% flash.discard %>
