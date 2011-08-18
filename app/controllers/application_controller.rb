@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
 
   def users_online
-    @user_online = Usuario.all(:conditions => ["current_sign_in_ip <> '' "])
+    @user_online = Usuario.all(:conditions => ["last_seen > ?", 5.minutes.ago])
   end
 
   def ultimos_mensajes
