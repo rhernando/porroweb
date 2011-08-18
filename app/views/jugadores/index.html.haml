@@ -1,0 +1,21 @@
+%h1 Listing jugadores
+
+%table
+  %tr
+    %th Nombre
+    %th Equipo
+    %th
+    %th
+    %th
+
+  - @jugadores.each do |jugador|
+    %tr
+      %td= jugador.nombre
+      %td= jugador.equipo_id
+      %td= link_to 'Show', jugador
+      %td= link_to 'Edit', edit_jugador_path(jugador)
+      %td= link_to 'Destroy', jugador, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Jugador', new_jugador_path

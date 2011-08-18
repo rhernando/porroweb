@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Nombre:
+  = @jugador.nombre
+%p
+  %b Equipo:
+  = @jugador.equipo_id
+
+= link_to 'Edit', edit_jugador_path(@jugador)
+\|
+= link_to 'Back', jugadores_path

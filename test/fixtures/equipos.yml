@@ -179,3 +179,18 @@ equipos_020:
   updated_at: 2011-08-03 17:20:47.000000000Z
   nombre_imagen: granada.png
   valor: 10
+
+# == Schema Information
+#
+# Table name: equipos
+#
+#  id            :integer(4)      not null, primary key
+#  nombre        :string(255)
+#  tipo          :integer(4)
+#  porra_id      :integer(4)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  nombre_imagen :string(255)
+#  valor         :integer(4)
+#
+

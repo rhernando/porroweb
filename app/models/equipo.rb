@@ -4,6 +4,7 @@ class Equipo < ActiveRecord::Base
   validates_presence_of :nombre
 
   has_many :usuarios, :through => :eleccion_equipos
+  has_many :jugadors
 
   def ruta_imagen
     if porra.code == Porra::LIGA

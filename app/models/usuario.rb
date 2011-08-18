@@ -16,6 +16,13 @@ class Usuario < ActiveRecord::Base
 
   #condiciones para las selecciones
   has_many :equipos, :through => :eleccion_equipos
+  has_many :jugadors, :through => :eleccion_jugadors
+  has_many :eleccion_equipos
+  has_many :eleccion_jugadors
+
+  def seleccion_equipo
+    self.equipos.count
+  end
 
 end
 

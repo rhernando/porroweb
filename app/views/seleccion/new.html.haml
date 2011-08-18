@@ -3,17 +3,7 @@
 
 
 #seleccionables
-  - @equipos.each do |grupo, eq|
-    .grupo-select
-      %h1
-        Grupo
-        = grupo
-      %ul
-        - eq.each do |equipo|
-          %li.equipo{:id => "li-#{equipo.id}"}
-            %img{:src => "#{equipo.ruta_imagen}", :class => 'img-select', :id => "#{equipo.id}-p-#{equipo.valor}"}
-
-
+  = render @p_seleccion
 
 #seleccion
   %h1 Equipos seleccionados

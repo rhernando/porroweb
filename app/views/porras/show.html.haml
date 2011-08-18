@@ -10,15 +10,25 @@
     Usuarios inscritos:
     = @porra.usuarios.count
 
-  - if @porra.usario_inscrito? current_usuario
-    %p Ya estás inscrito
-    - if @porra.fecha_inicio > DateTime.now
-      = link_to "Ir a Seleccion", new_seleccion_path(:idporra => @porra.id)
+  - if usuario_signed_in?
+    - if @porra.usario_inscrito? current_usuario
+      %p Ya estás inscrito
+      - if @porra.fecha_inicio > DateTime.now
+        %br
+        %p
+          = link_to "Seleccion de equipos", new_seleccion_path(:idporra => @porra.id, :ts => 0), :class => 'btn'
+          - if @num_select == @porra.num_equipos
+            = link_to "Seleccion de jugadores", new_seleccion_path(:idporra => @porra.id, :ts => 1), :class => 'btn'
+          - else
+            = link_to "Seleccion de jugadores", "javascript:alert('Primero debe seleccionar los #{@porra.num_equipos} equipos.');", :class => 'btn'
+      - else
+        = link_to "clasificacion", '#'
     - else
-      = link_to "clasificacion", '#'
+      %p
+        = link_to "incribirse",  inscribir_url(:porra => @porra)
   - else
-    %p
-      = link_to "incribirse",  inscribir_url(:porra => @porra)
+    = link_to('es necesario ser usuario', new_usuario_session_path)
+  %br
 
 
 

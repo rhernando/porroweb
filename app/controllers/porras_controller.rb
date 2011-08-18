@@ -15,6 +15,8 @@ class PorrasController < ApplicationController
   def show
     @porra = Porra.find(params[:id])
 
+    @num_select = EleccionEquipo.where(:equipo_id => @porra.equipos, :usuario_id => current_usuario).count
+
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @porra }

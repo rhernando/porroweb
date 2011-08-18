@@ -1,0 +1,15 @@
+
+= form_for @e_jugadores, :url =>  crea_seleccion_path do |f|
+  - @jugadores.each do |j_equipo|
+    - if j_equipo.count > 0
+      .jugador-select{:id => "#{j_equipo.first.equipo_id}"}
+        %h1
+          Equipo:
+          = Equipo.find(j_equipo.first.equipo_id).nombre
+
+        - j_equipo.each do |jugador|
+          %p
+            = check_box_tag j_equipo.first.equipo_id, "eq#{jugador.id}"
+            = jugador.nombre
+
+      = f.submit 'Guardar selección'

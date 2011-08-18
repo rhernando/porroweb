@@ -6,7 +6,7 @@ gem 'rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem 'mysql2'
+gem 'mysql2', '< 0.3'
 
 gem 'haml'
 gem 'compass'
@@ -55,7 +55,7 @@ group :development, :test do
   #gem 'launchy'
   #gem 'spork'
   #gem 'factory_girl_rails'
-  #gem 'haml-rails'
+  gem 'haml-rails'
 end
 
 # end

@@ -1,5 +1,6 @@
   $(document).ready(function() {
     $('.equipo').click(clickEquipo);
+    $('.jugador-select').click(compruebaNumJug);
 
     $('#validar').click(function(){
 
@@ -29,7 +30,20 @@
         );
         return false;
     });
+
+    <% @actual.each do |sel| %>
+        anadir(<%= sel.equipo_id %>);
+    <% end %>
+
   });
+
+  function compruebaNumJug(){
+    if ($("input[@name='"+ this.id + "[]']:checked").length > 2){
+        alert("El máximo es de dos jugadores por equipo");
+        return false;
+    }
+
+  }
 
   function restaurar(img){
     var idli = "#li-" + img.id.substring(0,img.id.indexOf("-"));
@@ -58,4 +72,9 @@
     $("#pts").text(parseInt(puntos) + sumar);
 
     $('#seleccion #divequipos').append(imagen);
+  }
+
+  function anadir(idequipo){
+    var lid = "#li-" + idequipo;
+    $(lid).click();
   }
