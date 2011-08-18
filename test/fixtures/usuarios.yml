@@ -6,9 +6,9 @@ usuarios_001:
   reset_password_token: !!null 
   reset_password_sent_at: !!null 
   remember_created_at: !!null 
-  sign_in_count: 2
-  current_sign_in_at: 2011-08-03 17:29:00.000000000Z
-  last_sign_in_at: 2011-08-03 16:56:55.000000000Z
+  sign_in_count: 9
+  current_sign_in_at: 2011-08-17 19:38:08.000000000Z
+  last_sign_in_at: 2011-08-17 19:31:27.000000000Z
   current_sign_in_ip: 127.0.0.1
   last_sign_in_ip: 127.0.0.1
   confirmation_token: !!null 
@@ -17,33 +17,6 @@ usuarios_001:
   nombre: ruben
   apellido: !!null 
   created_at: 2011-08-03 16:56:55.000000000Z
-  updated_at: 2011-08-03 17:29:00.000000000Z
+  updated_at: 2011-08-18 00:49:20.000000000Z
   apodo: ruben
-  last_seen: 2011-08-03 17:26:08.000000000Z
-
-# == Schema Information
-#
-# Table name: usuarios
-#
-#  id                     :integer(4)      not null, primary key
-#  email                  :string(255)     default(""), not null
-#  encrypted_password     :string(128)     default(""), not null
-#  reset_password_token   :string(255)
-#  reset_password_sent_at :datetime
-#  remember_created_at    :datetime
-#  sign_in_count          :integer(4)      default(0)
-#  current_sign_in_at     :datetime
-#  last_sign_in_at        :datetime
-#  current_sign_in_ip     :string(255)
-#  last_sign_in_ip        :string(255)
-#  confirmation_token     :string(255)
-#  confirmed_at           :datetime
-#  confirmation_sent_at   :datetime
-#  nombre                 :string(255)
-#  apellido               :string(255)
-#  created_at             :datetime
-#  updated_at             :datetime
-#  apodo                  :string(255)
-#  last_seen              :datetime
-#
-
+  last_seen: 2011-08-18 00:49:20.000000000Z

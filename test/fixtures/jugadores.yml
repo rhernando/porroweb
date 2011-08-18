@@ -1,21 +1,31 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  nombre: MyString
+---
+jugadores_001:
+  id: 1
+  nombre: Cristiano Ronaldo
   equipo_id: 1
-
-two:
-  nombre: MyString
+  created_at: 2011-08-08 15:24:00.000000000Z
+  updated_at: 2011-08-08 15:24:00.000000000Z
+jugadores_002:
+  id: 2
+  nombre: Leo Messi
+  equipo_id: 2
+  created_at: 2011-08-08 15:24:15.000000000Z
+  updated_at: 2011-08-08 15:24:15.000000000Z
+jugadores_003:
+  id: 3
+  nombre: Gonzalo Higuaín
   equipo_id: 1
-
-# == Schema Information
-#
-# Table name: jugadores
-#
-#  id         :integer(4)      not null, primary key
-#  nombre     :string(255)
-#  equipo_id  :integer(4)
-#  created_at :datetime
-#  updated_at :datetime
-#
-
+  created_at: 2011-08-17 18:46:15.000000000Z
+  updated_at: 2011-08-17 18:46:15.000000000Z
+jugadores_004:
+  id: 4
+  nombre: Karim Benzema
+  equipo_id: 1
+  created_at: 2011-08-17 18:46:41.000000000Z
+  updated_at: 2011-08-17 18:46:41.000000000Z
+jugadores_005:
+  id: 5
+  nombre: David Villa
+  equipo_id: 2
+  created_at: 2011-08-17 18:47:14.000000000Z
+  updated_at: 2011-08-17 18:47:14.000000000Z
