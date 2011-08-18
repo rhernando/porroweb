@@ -49,17 +49,29 @@ class InscripcionesController < ApplicationController
   # POST /inscripciones.xml
   def create
     @inscripcion = Inscripcion.new(params[:inscripcion])
-    @inscripcion.fecha = Date.new
+    p @inscripcion.inspect
+    @inscripcion.fecha = DateTime.new
 
-    respond_to do |format|
+    begin
       if @inscripcion.save
-        format.html { redirect_to(@inscripcion, :notice => 'Inscripcion was successfully created.') }
-        format.xml  { render :xml => @inscripcion, :status => :created, :location => @inscripcion }
+        redirect_to @inscripcion.porra, :notice => 'Inscripcion was successfully created.'
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @inscripcion.errors, :status => :unprocessable_entity }
+        redirect_to @inscripcion.porra, :notice =>  'Ya estas inscrito'
       end
+    rescue
+      redirect_to @inscripcion.porra, :notice =>  'Ya estas inscrito'
     end
+
+    #respond_to do |format|
+     # if @inscripcion.save
+      #  redirect_to @inscripcion.porra
+        #format.html { redirect_to(@inscripcion, :notice => 'Inscripcion was successfully created.') }
+        #format.xml  { render :xml => @inscripcion, :status => :created, :location => @inscripcion }
+      #else
+       # format.html { render :action => "new" }
+        #format.xml  { render :xml => @inscripcion.errors, :status => :unprocessable_entity }
+      #end
+    #end
   end
 
   # PUT /inscripciones/1
