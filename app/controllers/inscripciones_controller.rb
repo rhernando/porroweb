@@ -50,7 +50,7 @@ class InscripcionesController < ApplicationController
   def create
     @inscripcion = Inscripcion.new(params[:inscripcion])
     p @inscripcion.inspect
-    @inscripcion.fecha = DateTime.new
+    @inscripcion.fecha = DateTime.now
 
     begin
       if @inscripcion.save
