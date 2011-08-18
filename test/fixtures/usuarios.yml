@@ -5,7 +5,7 @@ usuarios_001:
   encrypted_password: $2a$10$5DWhcEtmSsLpPYi/IMKID.jZV5OZnam7kllzvZ9./POcbrGHSYpgO
   reset_password_token: !!null 
   reset_password_sent_at: !!null 
-  remember_created_at: !!null 
+  remember_created_at: 2011-08-17
   sign_in_count: 9
   current_sign_in_at: 2011-08-17 19:38:08.000000000Z
   last_sign_in_at: 2011-08-17 19:31:27.000000000Z
