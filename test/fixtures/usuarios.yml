@@ -12,8 +12,8 @@ usuarios_001:
   current_sign_in_ip: 127.0.0.1
   last_sign_in_ip: 127.0.0.1
   confirmation_token: !!null 
-  confirmed_at: !!null 
-  confirmation_sent_at: !!null 
+  confirmed_at: 2011-08-03
+  confirmation_sent_at: 2011-08-03
   nombre: ruben
   apellido: !!null 
   created_at: 2011-08-03 16:56:55.000000000Z
