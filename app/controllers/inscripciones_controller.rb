@@ -58,20 +58,12 @@ class InscripcionesController < ApplicationController
       else
         redirect_to @inscripcion.porra, :notice =>  'Ya estas inscrito'
       end
-    rescue
+    rescue Exception => e
+       log(e)
       redirect_to @inscripcion.porra, :notice =>  'Ya estas inscrito'
     end
 
-    #respond_to do |format|
-     # if @inscripcion.save
-      #  redirect_to @inscripcion.porra
-        #format.html { redirect_to(@inscripcion, :notice => 'Inscripcion was successfully created.') }
-        #format.xml  { render :xml => @inscripcion, :status => :created, :location => @inscripcion }
-      #else
-       # format.html { render :action => "new" }
-        #format.xml  { render :xml => @inscripcion.errors, :status => :unprocessable_entity }
-      #end
-    #end
+
   end
 
   # PUT /inscripciones/1
