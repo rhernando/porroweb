@@ -1,0 +1,14 @@
+= form_tag usuario_session_path do
+  %p
+    e-mail:
+    = text_field_tag 'usuario[email]'
+  %p
+    Password:
+    = password_field_tag 'usuario[password]'
+  %p
+    = check_box_tag 'usuario[remember_me]'
+    = label_tag 'usuario[remember_me]', 'Recordarme'
+  %p
+    %button Entrar
+  %p
+    = link_to "Olvidé la contraseña", new_password_path('usuario')
