@@ -59,7 +59,7 @@ class InscripcionesController < ApplicationController
         redirect_to @inscripcion.porra, :notice =>  'Ya estas inscrito'
       end
     rescue Exception => e
-       log(e)
+      p e
       redirect_to @inscripcion.porra, :notice =>  'Ya estas inscrito'
     end
 
