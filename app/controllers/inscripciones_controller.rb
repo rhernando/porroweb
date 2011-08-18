@@ -49,8 +49,8 @@ class InscripcionesController < ApplicationController
   # POST /inscripciones.xml
   def create
     @inscripcion = Inscripcion.new(params[:inscripcion])
-    puts params
-    puts @inscripcion.inspect
+    @inscripcion.fecha = Date.new
+
     respond_to do |format|
       if @inscripcion.save
         format.html { redirect_to(@inscripcion, :notice => 'Inscripcion was successfully created.') }
