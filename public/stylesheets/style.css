@@ -383,7 +383,7 @@ textarea:focus {
 }
 
 /* line 123, ../../app/stylesheets/partials/_page.scss */
-button, input[type="button"], input[type="submit"] {
+button, input[type="button"], input[type="submit"], .btn {
   color: #ffffff;
   padding: 5px 10px;
   background: -moz-linear-gradient(top, #550000 0%, #cc0000);
@@ -397,12 +397,12 @@ button, input[type="button"], input[type="submit"] {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
 
-/* line 149, ../../app/stylesheets/partials/_page.scss */
+/* line 150, ../../app/stylesheets/partials/_page.scss */
 .img-select {
   width: 50px;
 }
 
-/* line 153, ../../app/stylesheets/partials/_page.scss */
+/* line 154, ../../app/stylesheets/partials/_page.scss */
 #seleccionables {
   display: block;
   float: left;
@@ -410,11 +410,11 @@ button, input[type="button"], input[type="submit"] {
   margin-right: 15px;
   width: 430px;
 }
-/* line 159, ../../app/stylesheets/partials/_page.scss */
+/* line 160, ../../app/stylesheets/partials/_page.scss */
 #seleccionables .grupo-select {
   padding-bottom: 10px;
 }
-/* line 161, ../../app/stylesheets/partials/_page.scss */
+/* line 162, ../../app/stylesheets/partials/_page.scss */
 #seleccionables .grupo-select ul {
   border: 1px solid #999999;
   -moz-border-radius: 10px;
@@ -422,7 +422,7 @@ button, input[type="button"], input[type="submit"] {
   border-radius: 10px;
   background: black url("/images/bgimage.gif") repeat-x 0 -10px;
 }
-/* line 168, ../../app/stylesheets/partials/_page.scss */
+/* line 169, ../../app/stylesheets/partials/_page.scss */
 #seleccionables .grupo-select ul li {
   padding: 5px;
   cursor: pointer;
@@ -430,7 +430,7 @@ button, input[type="button"], input[type="submit"] {
   display: inline;
 }
 
-/* line 180, ../../app/stylesheets/partials/_page.scss */
+/* line 181, ../../app/stylesheets/partials/_page.scss */
 #seleccion {
   overflow: auto;
   margin-left: 15px;
@@ -446,21 +446,21 @@ button, input[type="button"], input[type="submit"] {
   padding: 5px;
   position: relative;
 }
-/* line 193, ../../app/stylesheets/partials/_page.scss */
+/* line 194, ../../app/stylesheets/partials/_page.scss */
 #seleccion img {
   cursor: pointer;
 }
-/* line 198, ../../app/stylesheets/partials/_page.scss */
+/* line 199, ../../app/stylesheets/partials/_page.scss */
 #seleccion #pie_seleccion {
   position: absolute;
   bottom: 5px;
   left: 5px;
 }
-/* line 204, ../../app/stylesheets/partials/_page.scss */
+/* line 205, ../../app/stylesheets/partials/_page.scss */
 #seleccion #divequipos {
   margin: 10px;
 }
-/* line 206, ../../app/stylesheets/partials/_page.scss */
+/* line 207, ../../app/stylesheets/partials/_page.scss */
 #seleccion #divequipos img {
   padding: 5px;
 }
@@ -725,4 +725,16 @@ article .line {
 /* line 45, ../../app/stylesheets/partials/_estilos.scss */
 #ultimos_mensajes p {
   padding-top: 5px;
+}
+
+/* line 1, ../../app/stylesheets/partials/_flash.scss */
+div.notice {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 40%;
+  border: 5px solid #ccF;
+  margin-top: 50px;
+  padding: 20px;
+  font-weight: bold;
 }

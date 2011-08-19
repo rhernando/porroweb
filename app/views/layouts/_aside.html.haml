@@ -9,6 +9,7 @@
   %h1 Últimos mensajes:
   - @ultimos_mensajes.each do |msg|
     %p
-      %strong= msg.usuario.apodo
+      - if msg.usuario
+        %strong= msg.usuario.apodo
       = msg.texto
   = link_to 'Ver mensajes', mensajes_path

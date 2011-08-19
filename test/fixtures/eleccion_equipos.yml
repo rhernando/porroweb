@@ -1,0 +1,71 @@
+---
+eleccion_equipos_001:
+  id: 21
+  equipo_id: 1
+  usuario_id: 1
+  orden: 0
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_002:
+  id: 22
+  equipo_id: 3
+  usuario_id: 1
+  orden: 1
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_003:
+  id: 23
+  equipo_id: 8
+  usuario_id: 1
+  orden: 2
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_004:
+  id: 24
+  equipo_id: 13
+  usuario_id: 1
+  orden: 3
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_005:
+  id: 25
+  equipo_id: 18
+  usuario_id: 1
+  orden: 4
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_006:
+  id: 26
+  equipo_id: 14
+  usuario_id: 1
+  orden: 5
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_007:
+  id: 27
+  equipo_id: 9
+  usuario_id: 1
+  orden: 6
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_008:
+  id: 28
+  equipo_id: 4
+  usuario_id: 1
+  orden: 7
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_009:
+  id: 29
+  equipo_id: 20
+  usuario_id: 1
+  orden: 8
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z
+eleccion_equipos_010:
+  id: 30
+  equipo_id: 16
+  usuario_id: 1
+  orden: 9
+  created_at: 2011-08-17 17:45:54.000000000Z
+  updated_at: 2011-08-17 17:45:54.000000000Z

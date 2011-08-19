@@ -1,0 +1,181 @@
+---
+equipos_001:
+  id: 1
+  nombre: Real Madrid C.F.
+  tipo: 1
+  porra_id: 1
+  created_at: 2011-08-03 17:09:58.000000000Z
+  updated_at: 2011-08-03 17:09:58.000000000Z
+  nombre_imagen: madrid.png
+  valor: 150
+equipos_002:
+  id: 2
+  nombre: F.C. Barcelona
+  tipo: 1
+  porra_id: 1
+  created_at: 2011-08-03 17:10:41.000000000Z
+  updated_at: 2011-08-03 17:10:41.000000000Z
+  nombre_imagen: barcelona.png
+  valor: 150
+equipos_003:
+  id: 3
+  nombre: Valencia C.F.
+  tipo: 2
+  porra_id: 1
+  created_at: 2011-08-03 17:11:10.000000000Z
+  updated_at: 2011-08-03 17:11:10.000000000Z
+  nombre_imagen: valencia.png
+  valor: 75
+equipos_004:
+  id: 4
+  nombre: Villareal C.F.
+  tipo: 2
+  porra_id: 1
+  created_at: 2011-08-03 17:11:34.000000000Z
+  updated_at: 2011-08-03 17:11:34.000000000Z
+  nombre_imagen: villareal.png
+  valor: 75
+equipos_005:
+  id: 5
+  nombre: Sevilla F.C.
+  tipo: 2
+  porra_id: 1
+  created_at: 2011-08-03 17:11:56.000000000Z
+  updated_at: 2011-08-03 17:11:56.000000000Z
+  nombre_imagen: sevilla.png
+  valor: 75
+equipos_006:
+  id: 6
+  nombre: Club Atlético de Madrid
+  tipo: 2
+  porra_id: 1
+  created_at: 2011-08-03 17:12:22.000000000Z
+  updated_at: 2011-08-03 17:12:22.000000000Z
+  nombre_imagen: atleti.png
+  valor: 75
+equipos_007:
+  id: 7
+  nombre: Málaga C.F.
+  tipo: 2
+  porra_id: 1
+  created_at: 2011-08-03 17:13:21.000000000Z
+  updated_at: 2011-08-03 17:13:21.000000000Z
+  nombre_imagen: malaga.png
+  valor: 75
+equipos_008:
+  id: 8
+  nombre: Athletic Club
+  tipo: 3
+  porra_id: 1
+  created_at: 2011-08-03 17:13:46.000000000Z
+  updated_at: 2011-08-03 17:13:46.000000000Z
+  nombre_imagen: athletic.png
+  valor: 50
+equipos_009:
+  id: 9
+  nombre: R.C.D. Mallorca
+  tipo: 3
+  porra_id: 1
+  created_at: 2011-08-03 17:14:12.000000000Z
+  updated_at: 2011-08-03 17:14:12.000000000Z
+  nombre_imagen: mallorca.png
+  valor: 50
+equipos_010:
+  id: 10
+  nombre: Club Atlético Osasuna
+  tipo: 3
+  porra_id: 1
+  created_at: 2011-08-03 17:14:57.000000000Z
+  updated_at: 2011-08-03 17:14:57.000000000Z
+  nombre_imagen: osasuna.png
+  valor: 50
+equipos_011:
+  id: 11
+  nombre: R.C.D. Espanyol
+  tipo: 3
+  porra_id: 1
+  created_at: 2011-08-03 17:15:27.000000000Z
+  updated_at: 2011-08-03 17:15:27.000000000Z
+  nombre_imagen: espanyol.png
+  valor: 50
+equipos_012:
+  id: 12
+  nombre: Real Racing Club de Santander
+  tipo: 3
+  porra_id: 1
+  created_at: 2011-08-03 17:15:48.000000000Z
+  updated_at: 2011-08-03 17:15:48.000000000Z
+  nombre_imagen: racing.png
+  valor: 50
+equipos_013:
+  id: 13
+  nombre: Getafe C.F.
+  tipo: 4
+  porra_id: 1
+  created_at: 2011-08-03 17:16:12.000000000Z
+  updated_at: 2011-08-03 17:16:12.000000000Z
+  nombre_imagen: getafe.png
+  valor: 30
+equipos_014:
+  id: 14
+  nombre: Real Sociedad de Fútbol
+  tipo: 4
+  porra_id: 1
+  created_at: 2011-08-03 17:16:28.000000000Z
+  updated_at: 2011-08-03 17:16:28.000000000Z
+  nombre_imagen: realsociedad.png
+  valor: 30
+equipos_015:
+  id: 15
+  nombre: Levante U.D.
+  tipo: 4
+  porra_id: 1
+  created_at: 2011-08-03 17:16:45.000000000Z
+  updated_at: 2011-08-03 17:16:45.000000000Z
+  nombre_imagen: levante.png
+  valor: 30
+equipos_016:
+  id: 16
+  nombre: Real Sporting de Gijón
+  tipo: 4
+  porra_id: 1
+  created_at: 2011-08-03 17:18:20.000000000Z
+  updated_at: 2011-08-03 17:18:20.000000000Z
+  nombre_imagen: sporting.png
+  valor: 30
+equipos_017:
+  id: 17
+  nombre: Real Zaragoza
+  tipo: 4
+  porra_id: 1
+  created_at: 2011-08-03 17:18:43.000000000Z
+  updated_at: 2011-08-03 17:18:43.000000000Z
+  nombre_imagen: zaragoza.png
+  valor: 30
+equipos_018:
+  id: 18
+  nombre: Real Betis Balompié
+  tipo: 5
+  porra_id: 1
+  created_at: 2011-08-03 17:19:39.000000000Z
+  updated_at: 2011-08-03 17:19:39.000000000Z
+  nombre_imagen: betis.png
+  valor: 10
+equipos_019:
+  id: 19
+  nombre: Rayo Vallecano
+  tipo: 5
+  porra_id: 1
+  created_at: 2011-08-03 17:20:30.000000000Z
+  updated_at: 2011-08-03 17:20:30.000000000Z
+  nombre_imagen: rayo.png
+  valor: 10
+equipos_020:
+  id: 20
+  nombre: Granada C.F.
+  tipo: 5
+  porra_id: 1
+  created_at: 2011-08-03 17:20:47.000000000Z
+  updated_at: 2011-08-03 17:20:47.000000000Z
+  nombre_imagen: granada.png
+  valor: 10

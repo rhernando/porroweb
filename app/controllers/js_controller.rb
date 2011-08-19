@@ -7,8 +7,8 @@ class JsController < ApplicationController
   end
 
   def scriptSeleccion
-    p params
     @porra = Porra.find params[:idporra]
+    @actual = EleccionEquipo.where(:equipo_id => @porra.equipos, :usuario_id => current_usuario)
 
   end
 
