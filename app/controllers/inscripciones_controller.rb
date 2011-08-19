@@ -54,7 +54,7 @@ class InscripcionesController < ApplicationController
 
     begin
       if @inscripcion.save
-        redirect_to @inscripcion.porra, :notice => 'Inscripcion was successfully created.'
+        redirect_to @inscripcion.porra, :notice => 'Te has inscrito correctamente.'
       else
         redirect_to @inscripcion.porra, :notice =>  'Ya estas inscrito'
       end
