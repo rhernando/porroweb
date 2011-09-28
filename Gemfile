@@ -6,12 +6,13 @@ gem 'rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem 'mysql2', '< 0.3'
+gem 'mysql2'
 
 gem 'haml'
 gem 'compass'
 gem 'html5-boilerplate'
 gem 'jquery-rails'
+gem 'prototype-rails'
 
 gem 'devise'
 gem "simple-navigation"

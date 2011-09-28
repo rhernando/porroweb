@@ -8,7 +8,7 @@ class Equipo < ActiveRecord::Base
 
   def ruta_imagen
     if porra.code == Porra::LIGA
-      '/images/liga/' + nombre_imagen
+      '/assets/liga/' + nombre_imagen
     end
   end
 end

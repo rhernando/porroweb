@@ -12,7 +12,7 @@
      padding: 7px 6px 0;
      font-size:12px;
      font-family:Verdana;
-     background:#000 url("/images/bgimage.gif") repeat-x 0 -40px;
+     background:#000 url("/assets/bgimage.gif") repeat-x 0 -40px;
      border:1px solid #AAA;
      line-height: 100%;
      border-radius: 2em;
@@ -23,7 +23,7 @@
 
      ul{
          .selected a, li:hover > a {
-             background: #666 url("/images/bgimage.gif") repeat-x 0 -110px;
+             background: #666 url("/assets/bgimage.gif") repeat-x 0 -110px;
              color: #FFF;
              border-top:solid 1px #EEE;
              -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
@@ -54,7 +54,7 @@
 
          margin: 0;
          padding: 7px 6px 0;
-         background: #7d7d7d url("/images/bgimage.gif") repeat-x 0 -40px;
+         background: #7d7d7d url("/assets/bgimage.gif") repeat-x 0 -40px;
          line-height: 100%;
 
          border-radius: 2em;
@@ -76,7 +76,7 @@
              width:250px;
              top:35px;
              left:0;
-             background:#AAA url("/images/bgimage.gif") repeat-x 0 -110px;;
+             background:#AAA url("/assets/bgimage.gif") repeat-x 0 -110px;;
 
              li{
                  float:none;
